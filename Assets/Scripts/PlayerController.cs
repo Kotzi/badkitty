@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    const float Velocity = 60f;
-    const float MovementThreshold = 0.5f;
-
-    private float DesiredMovementX = 0f;
-    private float DesiredMovementY = 0f;
+    const float Velocity = 10f;
+    const float MovementThreshold = 0.1f;
     private float MovementTimer = 0f;
+
+    private int dx, dy;
+    private bool isMoving = false;
 
     // Start is called before the first frame update
     void Start()
@@ -20,24 +20,26 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DesiredMovementX = Input.GetAxis("Horizontal");
-        DesiredMovementY = Input.GetAxis("Vertical");
+        if (!isMoving)
+        {
+            dx = Input.GetAxis("Horizontal") > 0.01f ? 1 : (Input.GetAxis("Horizontal") < -0.01f ? -1 : 0);
+            dy = dx != 0 ? 0 : (Input.GetAxis("Vertical") > 0.01f ? 1 : (Input.GetAxis("Vertical") < -0.01f ? -1 : 0));
+            isMoving = true;
+        }
+        if (isMoving)
+        {
+            float dt = Time.deltaTime;
+            gameObject.transform.position += new Vector3(dx, dy, 0f) * dt * Velocity;
+            MovementTimer += dt;
+            if (MovementTimer > MovementThreshold)
+            {
+                MovementTimer = 0f;
+                isMoving = false;
+            }
+        }
     }
 
     void FixedUpdate()
     {
-        MovementTimer += Time.deltaTime;
-        if (MovementTimer > MovementThreshold && (DesiredMovementX != 0f || DesiredMovementY != 0f))
-        {
-            if (DesiredMovementX != 0) 
-            {
-                this.transform.position += Vector3.right * DesiredMovementX * Velocity * Time.deltaTime;
-            } 
-            else if (DesiredMovementY != 0)
-            {
-                this.transform.position += Vector3.up * DesiredMovementY * Velocity * Time.deltaTime;
-            }
-            MovementTimer = 0f;
-        }
     }
 }
