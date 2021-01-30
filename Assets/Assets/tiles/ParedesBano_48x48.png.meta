@@ -42,11 +42,29 @@ TextureImporter:
       213: 7404093279012895254
     second: ParedesBano_48x48_12
   - first:
+      213: 2899455177250431656
+    second: ParedesBano_48x48_13
+  - first:
+      213: -1117503082501110111
+    second: ParedesBano_48x48_14
+  - first:
+      213: -2213241776627324606
+    second: ParedesBano_48x48_15
+  - first:
       213: 462182950194569432
     second: ParedesBano_48x48_16
   - first:
+      213: 7267741855315645710
+    second: ParedesBano_48x48_17
+  - first:
       213: -6895159605021060365
     second: ParedesBano_48x48_18
+  - first:
+      213: 7154639218270929020
+    second: ParedesBano_48x48_19
+  - first:
+      213: 64656793562212624
+    second: ParedesBano_48x48_20
   - first:
       213: 3370196421118787794
     second: ParedesBano_48x48_21
@@ -75,17 +93,44 @@ TextureImporter:
       213: 4252309780544698994
     second: ParedesBano_48x48_29
   - first:
-      213: 7267741855315645710
-    second: ParedesBano_48x48_17
+      213: -4699968824353252572
+    second: ParedesBano_48x48_30
   - first:
-      213: 2899455177250431656
-    second: ParedesBano_48x48_13
+      213: -5941169604743958949
+    second: ParedesBano_48x48_31
   - first:
-      213: -1117503082501110111
-    second: ParedesBano_48x48_14
+      213: -1948524857883237664
+    second: ParedesBano_48x48_32
   - first:
-      213: -2213241776627324606
-    second: ParedesBano_48x48_15
+      213: -7248442182168038113
+    second: ParedesBano_48x48_33
+  - first:
+      213: -8616056158437256130
+    second: ParedesBano_48x48_34
+  - first:
+      213: -2802878545731996181
+    second: ParedesBano_48x48_35
+  - first:
+      213: -6337734694584406925
+    second: ParedesBano_48x48_36
+  - first:
+      213: 5044911031414517813
+    second: ParedesBano_48x48_37
+  - first:
+      213: -7415448740535152578
+    second: ParedesBano_48x48_38
+  - first:
+      213: 311536423800379588
+    second: ParedesBano_48x48_39
+  - first:
+      213: 275917720002230206
+    second: ParedesBano_48x48_40
+  - first:
+      213: -8604873671052877442
+    second: ParedesBano_48x48_41
+  - first:
+      213: 1809374530729238561
+    second: ParedesBano_48x48_42
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -192,195 +237,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_2
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 432
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 503220385a10137b0800000000000000
-      internalID: -5246410280530730235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ParedesBano_48x48_4
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 384
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee9e544bae9b991f0800000000000000
-      internalID: -1037593821434222098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ParedesBano_48x48_12
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 260
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61abb63db9f90c660800000000000000
-      internalID: 7404093279012895254
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ParedesBano_48x48_18
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f2d8111fd87f40a0800000000000000
-      internalID: -6895159605021060365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ParedesBano_48x48_21
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d00418f9c755ce20800000000000000
-      internalID: 3370196421118787794
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ParedesBano_48x48_24
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 18
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c7781ec066904ec0800000000000000
-      internalID: -3584699960868177981
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ParedesBano_48x48_26
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 18
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca1405b193a917c90800000000000000
-      internalID: -7173783161362431572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ParedesBano_48x48_28
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 18
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d85d36ced34afb40800000000000000
-      internalID: 5474762921109969111
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ParedesBano_48x48_16
-      rect:
-        serializedVersion: 2
-        x: 195
-        y: 240
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d0e697c1f00a6600800000000000000
-      internalID: 462182950194569432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ParedesBano_48x48_1
       rect:
         serializedVersion: 2
@@ -402,11 +258,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: ParedesBano_48x48_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503220385a10137b0800000000000000
+      internalID: -5246410280530730235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: ParedesBano_48x48_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 384
+        x: 240
+        y: 432
         width: 48
         height: 48
       alignment: 0
@@ -423,11 +300,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: ParedesBano_48x48_4
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9e544bae9b991f0800000000000000
+      internalID: -1037593821434222098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: ParedesBano_48x48_5
       rect:
         serializedVersion: 2
-        x: 48
-        y: 384
+        x: 384
+        y: 432
         width: 48
         height: 48
       alignment: 0
@@ -447,8 +345,8 @@ TextureImporter:
       name: ParedesBano_48x48_6
       rect:
         serializedVersion: 2
-        x: 240
-        y: 432
+        x: 48
+        y: 384
         width: 48
         height: 48
       alignment: 0
@@ -468,7 +366,7 @@ TextureImporter:
       name: ParedesBano_48x48_7
       rect:
         serializedVersion: 2
-        x: 240
+        x: 96
         y: 384
         width: 48
         height: 48
@@ -510,8 +408,8 @@ TextureImporter:
       name: ParedesBano_48x48_9
       rect:
         serializedVersion: 2
-        x: 336
-        y: 432
+        x: 240
+        y: 384
         width: 48
         height: 48
       alignment: 0
@@ -531,8 +429,8 @@ TextureImporter:
       name: ParedesBano_48x48_10
       rect:
         serializedVersion: 2
-        x: 384
-        y: 432
+        x: 336
+        y: 384
         width: 48
         height: 48
       alignment: 0
@@ -570,11 +468,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: ParedesBano_48x48_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61abb63db9f90c660800000000000000
+      internalID: 7404093279012895254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: ParedesBano_48x48_13
       rect:
         serializedVersion: 2
         x: 144
-        y: 308
+        y: 311
         width: 48
         height: 48
       alignment: 0
@@ -594,8 +513,8 @@ TextureImporter:
       name: ParedesBano_48x48_14
       rect:
         serializedVersion: 2
-        x: 243
-        y: 240
+        x: 192
+        y: 288
         width: 48
         height: 48
       alignment: 0
@@ -615,7 +534,7 @@ TextureImporter:
       name: ParedesBano_48x48_15
       rect:
         serializedVersion: 2
-        x: 195
+        x: 240
         y: 288
         width: 48
         height: 48
@@ -633,10 +552,31 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: ParedesBano_48x48_16
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0e697c1f00a6600800000000000000
+      internalID: 462182950194569432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: ParedesBano_48x48_17
       rect:
         serializedVersion: 2
-        x: 243
+        x: 336
         y: 288
         width: 48
         height: 48
@@ -649,6 +589,300 @@ TextureImporter:
       bones: []
       spriteID: e05d35516b43cd460800000000000000
       internalID: 7267741855315645710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParedesBano_48x48_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2d8111fd87f40a0800000000000000
+      internalID: -6895159605021060365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParedesBano_48x48_19
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 263
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c700e1d46726a4360800000000000000
+      internalID: 7154639218270929020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParedesBano_48x48_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019679cd205b5e000800000000000000
+      internalID: 64656793562212624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParedesBano_48x48_21
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d00418f9c755ce20800000000000000
+      internalID: 3370196421118787794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParedesBano_48x48_22
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c158f1da8cde649d0800000000000000
+      internalID: -2790281472955677412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParedesBano_48x48_23
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201c0043ca6b5fa70800000000000000
+      internalID: 8860188692644413698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParedesBano_48x48_25
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eace9ac2870129b90800000000000000
+      internalID: -7236703542899512146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParedesBano_48x48_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1405b193a917c90800000000000000
+      internalID: -7173783161362431572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParedesBano_48x48_27
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7871fc6934a56bb0800000000000000
+      internalID: -4943364449421395841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParedesBano_48x48_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e63eed8b9bc8da0800000000000000
+      internalID: -5941169604743958949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParedesBano_48x48_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2e9d927f275f4e0800000000000000
+      internalID: -1948524857883237664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParedesBano_48x48_37
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 18
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53079ee9adf130640800000000000000
+      internalID: 5044911031414517813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParedesBano_48x48_39
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 18
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c897331abcc25400800000000000000
+      internalID: 311536423800379588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParedesBano_48x48_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 18
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12061c99c803c1910800000000000000
+      internalID: 1809374530729238561
       vertices: []
       indices: 
       edges: []

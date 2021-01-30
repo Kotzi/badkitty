@@ -9,8 +9,8 @@ public class ItemContainer : MonoBehaviour
 
     public GameObject player;
     public PlayerController player_controller;
-    public float distance_to_grab = 3f;
-    public float distance_to_shake = 4f;
+    public float distance_to_grab = 2.15f;
+    public float distance_to_shake = 3f;
     private ShakeCameraController Camera;
 
     // Start is called before the first frame update
@@ -25,7 +25,6 @@ public class ItemContainer : MonoBehaviour
     void Update()
     {
         float distance_to_player = (gameObject.transform.position - player.transform.position).magnitude;
-        //Debug.Log("distance_to_player: " + distance_to_player);
         if (item != null && distance_to_player < distance_to_shake)
         {
             Camera.Shake(0.5f);

@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    const float MinOrthographicSize = 5f;
-    const float MaxOrthographicSize = 6f;
-    const float Velocity = 10f;
+    const float MinOrthographicSize = 1.2f;
+    const float MaxOrthographicSize = 2f;
+    const float Velocity = 3f;
     const float StillThreshold = 1f;
     private float StillTimer = 0f;
 

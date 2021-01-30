@@ -57,9 +57,9 @@ public class GameController : MonoBehaviour
                 gameCanvasController.setCountdownText(currentTime.ToString("0"));
                 if(currentTime <= 0){
                     currentTime = 0;
+                    gameCanvasController.gameObject.SetActive(false);
                     GameOver.SetActive(true);
-                    Player.canMove =false;
-                    gameCanvasController.hideTimerAndItems();
+                    Player.canMove = false;
                 }
             }
         }

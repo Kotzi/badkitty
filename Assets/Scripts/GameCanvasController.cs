@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class GameCanvasController : MonoBehaviour
 {
@@ -16,63 +15,33 @@ public class GameCanvasController : MonoBehaviour
            KeysText.text = LanguageController.Shared.getKeysText();
            CarKeysText.text= LanguageController.Shared.getCarKeysText();
            WalletText.text = LanguageController.Shared.getWalletText();
-
-            countdownText.enabled=true;
-           FaceMaskText.enabled=true;
-           KeysText.enabled=true;
-           CarKeysText.enabled=true;
-           WalletText.enabled=true;
        }
 
        public void setCountdownText(string s){
               countdownText.text= s;
        }
        public void setListItems(bool[] items){
-            if(items[(int)ItemType.FACE_MASK])
-           {
-                FaceMaskText.color = Color.green;
-           }
-           else 
-           {
-                FaceMaskText.color = Color.red;
-           }
-
-           if(items[(int)ItemType.HOME_KEYS])
-           {
-                KeysText.color = Color.green;
-           }
-           else 
-           {
-                KeysText.color = Color.red;
-           }
-
-           if(items[(int)ItemType.CAR_KEY])
-           {
-                CarKeysText.color = Color.green;
-           }
-           else 
-           {
-               CarKeysText.color = Color.red;
-           }
-
-           if(items[(int)ItemType.WALLET])
-           {
-               WalletText.color = Color.green;
-           }
-           else 
-           {
-               WalletText.color = Color.red;
-           }
+            SetTextColor(FaceMaskText, items[(int)ItemType.FACE_MASK] ? Color.green : Color.red);
+            SetTextColor(KeysText, items[(int)ItemType.HOME_KEYS] ? Color.green : Color.red);
+            SetTextColor(CarKeysText, items[(int)ItemType.CAR_KEY] ? Color.green : Color.red);
+            SetTextColor(WalletText, items[(int)ItemType.WALLET] ? Color.green : Color.red);
        }
 
-       public void hideTimerAndItems(){
-           countdownText.enabled=false;
-           FaceMaskText.enabled=false;
-           KeysText.enabled=false;
-           CarKeysText.enabled=false;
-           WalletText.enabled=false;
-
-
-
-       }
+    private void SetTextColor(Text text, Color color)
+    {
+        var oldColor = text.color;
+        text.color = color;
+        if (oldColor != color)
+        {
+            var originalScale = text.transform.localScale;
+            var scaled = Vector3.one * 1.2f;
+            text.transform.DOScale(scaled, 0.25f).OnComplete(() => {
+                text.transform.DOScale(originalScale, 0.15f).OnComplete(() => {
+                    text.transform.DOScale(scaled, 0.25f).OnComplete(() => {
+                        text.transform.DOScale(originalScale, 0.15f);
+                    });
+                });
+            });
+        }
+    }
 }
