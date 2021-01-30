@@ -24,10 +24,17 @@ public class PlayerController : MonoBehaviour
         set{canMove = value;}
     }
 
+    public bool[] grabbed_items = new bool[(int)ItemType.N_TYPES];
+    public bool FaceMask = false;
+    public bool HomeKeys = false;
+    public bool CarKey = false;
+    public bool Wallet = false;
+    
     // Start is called before the first frame update
     void Start()
     {
- 
+        for (int i = 0; i < grabbed_items.Length; i++)
+            grabbed_items[i] = false;
     }
 
     // Update is called once per frame
@@ -72,5 +79,28 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+    }
+
+    public void GrabItem(ItemType item_type)
+    {
+        grabbed_items[(int)item_type] = true;
+        switch ((int)item_type)
+        {
+            case (int)ItemType.FACE_MASK:
+                FaceMask = true;
+                break;
+            case (int)ItemType.HOME_KEYS:
+                HomeKeys = true;
+                break;
+            case (int)ItemType.CAR_KEY:
+                CarKey = true;
+                break;
+            case (int)ItemType.WALLET:
+                Wallet = true;
+                break;
+            default:
+                Debug.Log("Error: Unrecognized item type");
+                break;
+        }
     }
 }
