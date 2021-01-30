@@ -1,14 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
 public class GameController : MonoBehaviour
 {
-    const float startingTime = 60f;
+    const float startingTime = 5f;
     public YouWonController YouWon;
-    public GameObject GameOver;
+    public GameOverController GameOver;
     public PlayerController Player;
     public ItemPlacer ItemPlacer;
     
@@ -22,6 +20,7 @@ public class GameController : MonoBehaviour
     public LightController MainLight;
     public CatController Cat;
     public Image MainOverlay;
+    public AudioSource MainAudioSource;
 
     void Start()
     {
@@ -36,7 +35,7 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && !GameOver.activeSelf && !YouWon.gameObject.activeSelf)
+        if(Input.GetKeyDown(KeyCode.Escape) && !GameOver.gameObject.activeSelf && !YouWon.gameObject.activeSelf)
         {
             if(isPaused)
             {
@@ -56,9 +55,12 @@ public class GameController : MonoBehaviour
                 currentTime -= 1 * Time.deltaTime;
                 gameCanvasController.setCountdownText(currentTime.ToString("0"));
                 if(currentTime <= 0){
+                    isTimerActive = false;
                     currentTime = 0;
+                    MainAudioSource.Stop();
                     gameCanvasController.gameObject.SetActive(false);
-                    GameOver.SetActive(true);
+                    GameOver.gameObject.SetActive(true);
+                    GameOver.PlaySong();
                     Player.canMove = false;
                 }
             }
@@ -67,6 +69,7 @@ public class GameController : MonoBehaviour
 
     void StartNight()
     {
+        MainAudioSource.Stop();
         YouWon.gameObject.SetActive(false);
         Player.RestartPlayer();
         var originalLightIntensity = MainLight.intensity;
@@ -79,6 +82,7 @@ public class GameController : MonoBehaviour
                         MainOverlay.DOColor(color, 0.75f)
                                     .OnComplete(() => {
                                         MainLight.SetIntensity(originalLightIntensity, 1f, () => {
+                                            MainAudioSource.Play();
                                             currentTime = startingTime;
                                             ToggleTimerActivate();
                                             Player.canMove = true;

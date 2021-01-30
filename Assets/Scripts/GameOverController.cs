@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class GameOverController : MonoBehaviour
 {
+    public AudioSource GameOverAudioSource;
     public Text GameOverText;
     public Text RetryButtonText;
     
@@ -19,6 +20,16 @@ public class GameOverController : MonoBehaviour
         {
             OnClickRetry();
         }
+    }
+
+    public void PlaySong()
+    {
+        GameOverAudioSource.Play();
+    }
+
+    public void StopSong()
+    {
+        GameOverAudioSource.Play();
     }
 
     public void OnClickRetry() 
