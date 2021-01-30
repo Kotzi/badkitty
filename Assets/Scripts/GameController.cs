@@ -29,7 +29,6 @@ public class GameController : MonoBehaviour
         currentTime = startingTime;
          PlayerController.CanMove =true;
         StartNight();
-        
     }
 
     // Update is called once per frame
