@@ -26,7 +26,7 @@ public class ItemPlacer : MonoBehaviour
             Item item = items[i].GetComponent<Item>();
             item.item_type = (ItemType)i;
             item_containers[rand].GetComponent<ItemContainer>().item = item;
-            //Debug.Log("Placing item type " + (ItemType)i + " into item container " + item_containers[rand].name);
+            Debug.Log("Placing item type " + (ItemType)i + " into item container " + item_containers[rand].name);
         }
     }
 
