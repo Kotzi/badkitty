@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 public class GameController : MonoBehaviour
 {
+    public GameObject GameOver;
     float currentTime = 0f;
     float startingTime = 10f;
 
@@ -24,7 +27,7 @@ public class GameController : MonoBehaviour
         countdownText.text= currentTime.ToString("0");
         if(currentTime <= 0){
             currentTime = 0;
-
+            GameOver.SetActive(true);
         }
         
 
