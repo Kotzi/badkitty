@@ -152,4 +152,15 @@ class LanguageController : MonoBehaviour {
 
         return "";
     }
+
+    public string getDayText(string day) {
+        switch (CurrentLanguage) 
+        {
+            case Language.EN: return "Day " + day;
+            case Language.ES: return "Día " + day;
+            case Language.CAT: return "CAT";
+        }
+
+        return "";
+    }
 }

@@ -17,23 +17,23 @@ public class GameController : MonoBehaviour
 
     bool isTimerActive = false;
     float currentTime = 0f;
+    int currentDay = 1;
     bool isPaused = false;
     public LightController MainLight;
     public CatController Cat;
     public Image MainOverlay;
 
-    // Start is called before the first frame update
     void Start()
     {
         YouWon.NextDayButtonAction = () => {
             ItemPlacer.AddItems();
+            currentDay += 1;
             StartNight();
         };
         currentTime = startingTime;
         StartNight();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape) && !GameOver.activeSelf && !YouWon.gameObject.activeSelf)
@@ -112,6 +112,7 @@ public class GameController : MonoBehaviour
     public void DoorOpened()
     {
         ToggleTimerActivate();
+        YouWon.UpdateDay(currentDay.ToString("0"));
         YouWon.gameObject.SetActive(true);
     }
 }
