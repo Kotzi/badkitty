@@ -14,7 +14,7 @@ public class LightController : MonoBehaviour
     private Light2D Light;
     private System.Action CompletionAction = null;
 
-    void Start()
+    void Awake()
     {
         Light = GetComponent<Light2D>(); 
         DesiredIntensity = Light.intensity;
