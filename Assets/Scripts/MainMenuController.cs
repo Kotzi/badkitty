@@ -4,7 +4,9 @@ using UnityEngine.UI;
 public class MainMenuController : MonoBehaviour
 {
     public Text MuteButtonText;
+    public Text StartButtonText;
 
+    private LanguageController LanguageController;
     private SceneManagerController SceneManagerController;
     private AudioController AudioController;
 
@@ -12,6 +14,8 @@ public class MainMenuController : MonoBehaviour
     {
         AudioController = GetComponent<AudioController>();
         SceneManagerController = Object.FindObjectOfType<SceneManagerController>();
+        LanguageController = Object.FindObjectOfType<LanguageController>();
+        ReloadTexts();
     }
 
     void Update()
@@ -21,7 +25,7 @@ public class MainMenuController : MonoBehaviour
             OnClickStart();
         }
 
-        MuteButtonText.text = AudioController.IsMuted ? "Unmute audio" : "Mute audio";
+        MuteButtonText.text = LanguageController.getMuteButtonText(AudioController.IsMuted);
     }
 
     public void OnClickStart() 
@@ -32,5 +36,29 @@ public class MainMenuController : MonoBehaviour
     public void OnClickSound() 
     {
         AudioController.ToggleMute();
+    }
+
+    public void OnClickCAT()
+    {
+        LanguageController.CurrentLanguage = LanguageController.Language.CAT;
+        ReloadTexts();
+    }
+
+    public void OnClickES()
+    {
+        LanguageController.CurrentLanguage = LanguageController.Language.ES;
+        ReloadTexts();
+    }
+
+    public void OnClickEN()
+    {
+        LanguageController.CurrentLanguage = LanguageController.Language.EN;
+        ReloadTexts();
+    }
+
+    private void ReloadTexts()
+    {
+        MuteButtonText.text = LanguageController.getMuteButtonText(AudioController.IsMuted);
+        StartButtonText.text = LanguageController.getStartButtonText();
     }
 }

@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f506360a29a54812b428c61e290b653, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameOverText: {fileID: 6959601832608769462}
 --- !u!222 &3002390183590818462
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -242,7 +243,7 @@ GameObject:
   - component: {fileID: 922751543763772326}
   - component: {fileID: 6959601832608769462}
   m_Layer: 5
-  m_Name: PointsText
+  m_Name: GameOverText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
