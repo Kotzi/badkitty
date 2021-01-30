@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverText: {fileID: 6959601832608769462}
+  RetryButtonText: {fileID: 2466121839482710036}
 --- !u!222 &3002390183590818462
 CanvasRenderer:
   m_ObjectHideFlags: 0

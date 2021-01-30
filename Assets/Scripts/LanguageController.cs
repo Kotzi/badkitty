@@ -86,4 +86,59 @@ class LanguageController : MonoBehaviour {
 
         return "";
     }
+
+    public string getFaceMaskText() {
+        switch (CurrentLanguage) 
+        {
+            case Language.EN: return "Face mask";
+            case Language.ES: return "Mascarilla";
+            case Language.CAT: return "Mascareta";
+        }
+
+        return "";
+    }
+
+    public string getKeysText() {
+        switch (CurrentLanguage) 
+        {
+            case Language.EN: return "Keys";
+            case Language.ES: return "Llaves";
+            case Language.CAT: return "CAT";
+        }
+
+        return "";
+    }
+
+    public string getCarKeysText() {
+        switch (CurrentLanguage) 
+        {
+            case Language.EN: return "Car keys";
+            case Language.ES: return "Llaves del coche";
+            case Language.CAT: return "CAT";
+        }
+
+        return "";
+    }
+
+    public string getWalletText() {
+        switch (CurrentLanguage) 
+        {
+            case Language.EN: return "Wallet";
+            case Language.ES: return "Cartera";
+            case Language.CAT: return "CAT";
+        }
+
+        return "";
+    }
+
+    public string getRetryText() {
+        switch (CurrentLanguage) 
+        {
+            case Language.EN: return "Retry";
+            case Language.ES: return "Reintentar";
+            case Language.CAT: return "CAT";
+        }
+
+        return "";
+    }
 }
