@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private float StillTimer = 0f;
 
     public CameraController Camera;
+    public GameController GameController;
     private float dx, dy;
     private bool isMoving = false;
 
@@ -33,7 +34,11 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         for (int i = 0; i < grabbed_items.Length; i++)
+        {
             grabbed_items[i] = false;
+        }
+
+        GameController.setListItems(grabbed_items);
     }
 
     // Update is called once per frame
@@ -107,6 +112,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Error: Unrecognized item type");
                 break;
         }
+        GameController.setListItems(grabbed_items);
     }
 
     private void setDisplacement(float new_dx, float new_dy) { dx = new_dx; dy = new_dy; }
