@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
         set{canMove = value;}
     }
 
+    private bool horizontal_priority = true;
+
     public bool[] grabbed_items = new bool[(int)ItemType.N_TYPES];
     public bool FaceMask = false;
     public bool HomeKeys = false;
@@ -40,45 +42,57 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(canMove){
-
-       
-        if (!isMoving)
+        if(canMove)
         {
-            dx = Input.GetAxis("Horizontal") > 0.01f ? 1 : (Input.GetAxis("Horizontal") < -0.01f ? -1 : 0);
-            dy = dx != 0 ? 0 : (Input.GetAxis("Vertical") > 0.01f ? 1 : (Input.GetAxis("Vertical") < -0.01f ? -1 : 0));
-            isMoving = (dx != 0 || dy != 0);
-        }
-        if (isMoving)
-        {
-            float dt = Time.deltaTime;
-            gameObject.transform.position += new Vector3(dx, dy, 0f) * dt * Velocity;
-            MovementTimer += dt;
-            StillTimer = 0f;
-            if (MovementTimer > MovementThreshold)
+            if (!isMoving)
             {
-                MovementTimer = 0f;
-                isMoving = false;
+                StillTimer += Time.deltaTime;
+
+                int horizontal_input = (int)Input.GetAxisRaw("Horizontal"),
+                    vertical_input = (int)Input.GetAxisRaw("Vertical");
+
+                if (horizontal_input != 0 && vertical_input != 0)
+                {
+                    if (horizontal_priority)
+                        setDisplacement(horizontal_input, 0);
+                    else
+                        setDisplacement(0, vertical_input);
+                }
+                else
+                {
+                    setDisplacement(horizontal_input, vertical_input);
+                    horizontal_priority = horizontal_input == 0;
+                }
+
+                isMoving = (dx != 0 || dy != 0);
             }
-        } 
-        else
-        {
-            StillTimer += Time.deltaTime;
+
+            if (StillTimer > StillThreshold)
+            {
+                Camera.SetOrthographicSize(MaxOrthographicSize);
+            }
+            else 
+            {
+                Camera.SetOrthographicSize(MinOrthographicSize);
+            }
         }
-        
-        if (StillTimer > StillThreshold)
-        {
-            Camera.SetOrthographicSize(MaxOrthographicSize);
-        }
-        else 
-        {
-            Camera.SetOrthographicSize(MinOrthographicSize);
-        }
-    }
     }
 
     void FixedUpdate()
     {
+        if (isMoving)
+        {
+            float dt = Time.fixedDeltaTime;
+            gameObject.transform.position += new Vector3(dx, dy, 0f) * dt * Velocity;
+            isMoving = false;
+            StillTimer = 0f;/*
+            MovementTimer += dt;
+            if (MovementTimer > MovementThreshold)
+            {
+                MovementTimer = 0f;
+                isMoving = false;
+            }*/
+        }
     }
 
     public void GrabItem(ItemType item_type)
@@ -103,4 +117,6 @@ public class PlayerController : MonoBehaviour
                 break;
         }
     }
+
+    private void setDisplacement(int new_dx, int new_dy) { dx = new_dx; dy = new_dy; }
 }
