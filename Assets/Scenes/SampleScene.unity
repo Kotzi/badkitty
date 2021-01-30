@@ -909,7 +909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   YouWon: {fileID: 1553879622}
   GameOver: {fileID: 385708353}
-  Player: {fileID: 3421349364109581133}
+  Player: {fileID: 3421349364109581134}
   gameCanvasController: {fileID: 2793719904429717626}
   PauseMenuController: {fileID: 860546275}
   MainLight: {fileID: 1571618408}
@@ -4013,12 +4013,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb5c8e877029944ec86abce332a037d9, type: 3}
---- !u!1 &1553879622 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5996611538095876, guid: fb5c8e877029944ec86abce332a037d9,
+--- !u!114 &1553879622 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 238094525451959145, guid: fb5c8e877029944ec86abce332a037d9,
     type: 3}
   m_PrefabInstance: {fileID: 1553879621}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d3f21dbdfa34fd8a848155b151a2e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1571618405
 GameObject:
   m_ObjectHideFlags: 0
@@ -4381,6 +4387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   player_controller: {fileID: 0}
+  GameController: {fileID: 0}
   distance_to_open: 3
 --- !u!1 &2019057003
 GameObject:
@@ -4833,12 +4840,18 @@ PrefabInstance:
       objectReference: {fileID: 597069836}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f6348df1ffb1476e856476fc34fd3ca, type: 3}
---- !u!1 &3421349364109581133 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1722754632737851801, guid: 6f6348df1ffb1476e856476fc34fd3ca,
+--- !u!114 &3421349364109581134 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5786693902802990135, guid: 6f6348df1ffb1476e856476fc34fd3ca,
     type: 3}
   m_PrefabInstance: {fileID: 3421349364109581132}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd5e0e8ca1019419d94447e6f09bb945, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7520405929934666780
 PrefabInstance:
   m_ObjectHideFlags: 0

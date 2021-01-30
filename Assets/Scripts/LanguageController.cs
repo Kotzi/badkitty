@@ -141,4 +141,15 @@ class LanguageController : MonoBehaviour {
 
         return "";
     }
+
+    public string getNextDayText() {
+        switch (CurrentLanguage) 
+        {
+            case Language.EN: return "Go to next day";
+            case Language.ES: return "Ir al próximo día";
+            case Language.CAT: return "CAT";
+        }
+
+        return "";
+    }
 }

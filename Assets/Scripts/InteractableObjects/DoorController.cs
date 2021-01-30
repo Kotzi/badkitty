@@ -6,6 +6,7 @@ public class DoorController : MonoBehaviour
 {
     public GameObject player;
     public PlayerController player_controller;
+    public GameController GameController;
     public float distance_to_open = 3f;
 
     // Start is called before the first frame update
@@ -35,6 +36,7 @@ public class DoorController : MonoBehaviour
             else
             {
                 Debug.Log("You managed to grab all your stuff in time!");
+                GameController.DoorOpened();
             }
         }
     }
