@@ -22,47 +22,47 @@ public class GameCanvasController : MonoBehaviour
            KeysText.enabled=true;
            CarKeysText.enabled=true;
            WalletText.enabled=true;
-
-
-
        }
+
        public void setCountdownText(string s){
               countdownText.text= s;
        }
        public void setListItems(bool[] items){
-           //Mask
-           if(items[(int)ItemType.FACE_MASK]){
-                FaceMaskText.fontSize = 30;
+            if(items[(int)ItemType.FACE_MASK])
+           {
+                FaceMaskText.color = Color.green;
            }
-           else if(!items[(int)ItemType.FACE_MASK]){
-               //Setearlo valores iniciales
-           }
-            //
-           if(items[(int)ItemType.HOME_KEYS]){
-               KeysText.fontSize = 30;
-           }
-           else if(!items[(int)ItemType.HOME_KEYS]){
-
+           else 
+           {
+                FaceMaskText.color = Color.red;
            }
 
-           if(items[(int)ItemType.CAR_KEY]){
-               CarKeysText.fontSize = 30;
-            
+           if(items[(int)ItemType.HOME_KEYS])
+           {
+                KeysText.color = Color.green;
            }
-           else if(!items[(int)ItemType.CAR_KEY]){
-               
-
-           }
-
-           if(items[(int)ItemType.WALLET]){
-               WalletText.fontSize= 30;
-
-           }
-           else if(!items[(int)ItemType.WALLET]){
-
+           else 
+           {
+                KeysText.color = Color.red;
            }
 
-       
+           if(items[(int)ItemType.CAR_KEY])
+           {
+                CarKeysText.color = Color.green;
+           }
+           else 
+           {
+               CarKeysText.color = Color.red;
+           }
+
+           if(items[(int)ItemType.WALLET])
+           {
+               WalletText.color = Color.green;
+           }
+           else 
+           {
+               WalletText.color = Color.red;
+           }
        }
 
        public void hideTimerAndItems(){

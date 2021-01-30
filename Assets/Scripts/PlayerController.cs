@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
 
     public void RestartPlayer()
     {
-        canMove = true;
+        canMove = false;
         for (int i = 0; i < grabbed_items.Length; i++)
         {
             grabbed_items[i] = false;
