@@ -4,7 +4,7 @@ using DG.Tweening;
 
 public class GameController : MonoBehaviour
 {
-    const float startingTime = 5f;
+    const float startingTime = 60f;
     public YouWonController YouWon;
     public GameOverController GameOver;
     public PlayerController Player;
