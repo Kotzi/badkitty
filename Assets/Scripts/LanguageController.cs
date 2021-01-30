@@ -20,7 +20,7 @@ class LanguageController : MonoBehaviour {
         {
             case Language.EN: return "Start";
             case Language.ES: return "Comenzar";
-            case Language.CAT: return "Start";
+            case Language.CAT: return "Comença";
         }
 
         return "";
@@ -31,7 +31,7 @@ class LanguageController : MonoBehaviour {
         {
             case Language.EN: return muted ? "Unmute audio" : "Mute audio";
             case Language.ES: return muted ? "Activar sonido" : "Desactivar sonido";
-            case Language.CAT: return muted ? "Unmute audio" : "Mute audio";
+            case Language.CAT: return muted ? "Activa so" : "Mute audio";
         }
 
         return "";
@@ -42,7 +42,7 @@ class LanguageController : MonoBehaviour {
         {
             case Language.EN: return "Game over";
             case Language.ES: return "Juego terminado";
-            case Language.CAT: return "Game over";
+            case Language.CAT: return "Fi del joc";
         }
 
         return "";
@@ -53,7 +53,7 @@ class LanguageController : MonoBehaviour {
         {
             case Language.EN: return "You won!";
             case Language.ES: return "Has ganado!";
-            case Language.CAT: return "You won!";
+            case Language.CAT: return "Has guanyat!";
         }
 
         return "";
