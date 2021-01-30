@@ -26,7 +26,6 @@ public class GameController : MonoBehaviour
     void Start()
     {
         currentTime = startingTime;
-         PlayerController.CanMove =true;
         StartNight();
     }
 
@@ -63,6 +62,7 @@ public class GameController : MonoBehaviour
 
     void StartNight()
     {
+        PlayerController.CanMove = false;
         ToggleTimerActivate();
         var originalLightIntensity = MainLight.intensity;
         MainLight.SetIntensity(0.5f, 1f, () => {
@@ -76,6 +76,7 @@ public class GameController : MonoBehaviour
                                         MainLight.SetIntensity(originalLightIntensity, 1f, () => {
                                             currentTime = startingTime;
                                             ToggleTimerActivate();
+                                            PlayerController.CanMove = true;
                                         });
                                     });
                     });

@@ -8,14 +8,11 @@ public class PlayerController : MonoBehaviour
     const float MinOrthographicSize = 5f;
     const float MaxOrthographicSize = 6f;
     const float Velocity = 10f;
-    const float MovementThreshold = 0.1f;
     const float StillThreshold = 1f;
-
-    private float MovementTimer = 0f;
     private float StillTimer = 0f;
 
     public CameraController Camera;
-    private int dx, dy;
+    private float dx, dy;
     private bool isMoving = false;
 
     public static bool canMove = true;
@@ -48,8 +45,8 @@ public class PlayerController : MonoBehaviour
             {
                 StillTimer += Time.deltaTime;
 
-                int horizontal_input = (int)Input.GetAxisRaw("Horizontal"),
-                    vertical_input = (int)Input.GetAxisRaw("Vertical");
+                float horizontal_input = Input.GetAxis("Horizontal");
+                float vertical_input = Input.GetAxis("Vertical");
 
                 if (horizontal_input != 0 && vertical_input != 0)
                 {
@@ -85,13 +82,7 @@ public class PlayerController : MonoBehaviour
             float dt = Time.fixedDeltaTime;
             gameObject.transform.position += new Vector3(dx, dy, 0f) * dt * Velocity;
             isMoving = false;
-            StillTimer = 0f;/*
-            MovementTimer += dt;
-            if (MovementTimer > MovementThreshold)
-            {
-                MovementTimer = 0f;
-                isMoving = false;
-            }*/
+            StillTimer = 0f;
         }
     }
 
@@ -118,5 +109,5 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void setDisplacement(int new_dx, int new_dy) { dx = new_dx; dy = new_dy; }
+    private void setDisplacement(float new_dx, float new_dy) { dx = new_dx; dy = new_dy; }
 }
