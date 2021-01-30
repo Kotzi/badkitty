@@ -910,6 +910,7 @@ MonoBehaviour:
   YouWon: {fileID: 1553879622}
   GameOver: {fileID: 385708353}
   Player: {fileID: 3421349364109581134}
+  ItemPlacer: {fileID: 1230363645}
   gameCanvasController: {fileID: 2793719904429717626}
   PauseMenuController: {fileID: 860546275}
   MainLight: {fileID: 1571618408}
@@ -4710,6 +4711,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793719906386941436, guid: 4100e1ba7fcac43e59bab99c719b21f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3835266910282279001, guid: 4100e1ba7fcac43e59bab99c719b21f2,
         type: 3}

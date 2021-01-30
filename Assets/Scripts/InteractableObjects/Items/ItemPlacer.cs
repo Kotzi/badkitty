@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class ItemPlacer : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
+    {
+        AddItems();
+    }
+
+    public void AddItems()
     {
         GameObject[] items = GameObject.FindGameObjectsWithTag("Item");
         GameObject[] item_containers = GameObject.FindGameObjectsWithTag("ItemContainer");
@@ -28,11 +32,5 @@ public class ItemPlacer : MonoBehaviour
             item_containers[rand].GetComponent<ItemContainer>().item = item;
             Debug.Log("Placing item type " + (ItemType)i + " into item container " + item_containers[rand].name);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

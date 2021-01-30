@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     public YouWonController YouWon;
     public GameObject GameOver;
     public PlayerController Player;
+    public ItemPlacer ItemPlacer;
     
     public GameCanvasController gameCanvasController;
     public PauseMenuController PauseMenuController;
@@ -25,6 +26,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         YouWon.NextDayButtonAction = () => {
+            ItemPlacer.AddItems();
             StartNight();
         };
         currentTime = startingTime;
