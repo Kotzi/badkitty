@@ -8,7 +8,7 @@ public class GameOverController : MonoBehaviour
     
     void Awake()
     {
-        GameOverText.text = Object.FindObjectOfType<LanguageController>().getGameOverText();
+        GameOverText.text = LanguageController.Shared.getGameOverText();
     }
 
     void Update()
