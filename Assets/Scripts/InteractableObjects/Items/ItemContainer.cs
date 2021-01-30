@@ -25,11 +25,6 @@ public class ItemContainer : MonoBehaviour
     void Update()
     {
         float distance_to_player = (gameObject.transform.position - player.transform.position).magnitude;
-        if (gameObject.name.Equals("ItemContainer4"))
-        {
-            Debug.Log("ItemContainer4 distance_to_player: " + distance_to_player);
-            Debug.Log("ItemContainer4 distance_to_grab: " + distance_to_grab);
-        }
         if (item != null && distance_to_player < distance_to_shake)
         {
             Camera.Shake(0.5f);
