@@ -155,11 +155,7 @@ Transform:
   m_Father: {fileID: 2019057004}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!1 &259430936
-=======
 --- !u!1 &150431122
->>>>>>> f043916340dee382db2865a4c847a111dbe6a5d4
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
