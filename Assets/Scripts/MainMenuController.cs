@@ -3,16 +3,14 @@ using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
 {
-    public Text MuteButtonText;
     public Text StartButtonText;
-
+    public SoundButton SoundButton;
     private LanguageController LanguageController;
     private SceneManagerController SceneManagerController;
-    private AudioController AudioController;
 
     void Awake()
     {
-        AudioController = GetComponent<AudioController>();
+        SoundButton.AudioController = GetComponent<AudioController>();
         SceneManagerController = Object.FindObjectOfType<SceneManagerController>();
         LanguageController = LanguageController.Shared;
         ReloadTexts();
@@ -24,18 +22,11 @@ public class MainMenuController : MonoBehaviour
         {
             OnClickStart();
         }
-
-        MuteButtonText.text = LanguageController.getMuteButtonText(AudioController.IsMuted);
     }
 
     public void OnClickStart() 
     {
         SceneManagerController.GoToNexScene();
-    }
-
-    public void OnClickSound() 
-    {
-        AudioController.ToggleMute();
     }
 
     public void OnClickCAT()
@@ -58,7 +49,6 @@ public class MainMenuController : MonoBehaviour
 
     private void ReloadTexts()
     {
-        MuteButtonText.text = LanguageController.getMuteButtonText(AudioController.IsMuted);
         StartButtonText.text = LanguageController.getStartButtonText();
     }
 }

@@ -42,18 +42,7 @@ class LanguageController : MonoBehaviour {
 
         return "";
     }
-
-    public string getMuteButtonText(bool muted) {
-        switch (CurrentLanguage) 
-        {
-            case Language.EN: return muted ? "Unmute audio" : "Mute audio";
-            case Language.ES: return muted ? "Activar sonido" : "Desactivar sonido";
-            case Language.CAT: return muted ? "Activa so" : "Silencia";
-        }
-
-        return "";
-    }
-
+    
     public string getPauseText() {
         switch (CurrentLanguage) 
         {
