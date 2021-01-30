@@ -55,6 +55,16 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
+
+# IDE settings etc
+.vs/
+.vscode/
+
+# Ignores some MacOS files
+.DS_Store
+._*
+
+
 # Crashlytics generated file
 crashlytics-build.properties
 
