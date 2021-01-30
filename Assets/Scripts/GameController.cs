@@ -7,32 +7,36 @@ using DG.Tweening;
 public class GameController : MonoBehaviour
 {
     const float startingTime = 60f;
-    public GameObject YouWon;
+    public YouWonController YouWon;
     public GameObject GameOver;
-    public GameObject Player;
+    public PlayerController Player;
+    public ItemPlacer ItemPlacer;
     
     public GameCanvasController gameCanvasController;
     public PauseMenuController PauseMenuController;
 
-    bool isTimerActive = true;
+    bool isTimerActive = false;
     float currentTime = 0f;
+    int currentDay = 1;
     bool isPaused = false;
     public LightController MainLight;
     public CatController Cat;
     public Image MainOverlay;
 
-    // Start is called before the first frame update
     void Start()
     {
+        YouWon.NextDayButtonAction = () => {
+            ItemPlacer.AddItems();
+            currentDay += 1;
+            StartNight();
+        };
         currentTime = startingTime;
-        PlayerController.CanMove =true;
         StartNight();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && !GameOver.activeSelf && !YouWon.activeSelf)
+        if(Input.GetKeyDown(KeyCode.Escape) && !GameOver.activeSelf && !YouWon.gameObject.activeSelf)
         {
             if(isPaused)
             {
@@ -54,7 +58,7 @@ public class GameController : MonoBehaviour
                 if(currentTime <= 0){
                     currentTime = 0;
                     GameOver.SetActive(true);
-                    PlayerController.CanMove =false;
+                    Player.CanMove =false;
                     gameCanvasController.hideTimerAndItems();
                 }
             }
@@ -63,8 +67,8 @@ public class GameController : MonoBehaviour
 
     void StartNight()
     {
-        PlayerController.CanMove = false;
-        ToggleTimerActivate();
+        YouWon.gameObject.SetActive(false);
+        Player.RestartPlayer();
         var originalLightIntensity = MainLight.intensity;
         MainLight.SetIntensity(0.5f, 1f, () => {
             Cat.WakeUp();
@@ -77,7 +81,7 @@ public class GameController : MonoBehaviour
                                         MainLight.SetIntensity(originalLightIntensity, 1f, () => {
                                             currentTime = startingTime;
                                             ToggleTimerActivate();
-                                            PlayerController.CanMove = true;
+                                            Player.canMove = true;
                                         });
                                     });
                     });
@@ -87,7 +91,6 @@ public class GameController : MonoBehaviour
     void ToggleTimerActivate() {
         isTimerActive = !isTimerActive;
         gameCanvasController.gameObject.SetActive(isTimerActive);
-     
     }
 
     void PauseGame()
@@ -102,7 +105,15 @@ public class GameController : MonoBehaviour
         PauseMenuController.gameObject.SetActive(false);
     }
 
-    public void setListItems(bool[] items){
+    public void setListItems(bool[] items)
+    {
         gameCanvasController.setListItems(items);
+    }
+
+    public void DoorOpened()
+    {
+        ToggleTimerActivate();
+        YouWon.UpdateDay(currentDay.ToString("0"));
+        YouWon.gameObject.SetActive(true);
     }
 }

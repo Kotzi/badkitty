@@ -15,33 +15,19 @@ public class PlayerController : MonoBehaviour
     public GameController GameController;
     private float dx, dy;
     private bool isMoving = false;
-
-    public static bool canMove = true;
-    public static bool CanMove{
-        get{return canMove; }
-        set{canMove = value;}
-    }
-
     private bool horizontal_priority = true;
-
     public bool[] grabbed_items = new bool[(int)ItemType.N_TYPES];
     public bool FaceMask = false;
     public bool HomeKeys = false;
     public bool CarKey = false;
     public bool Wallet = false;
-    
-    // Start is called before the first frame update
+    public bool canMove = true;
+
     void Start()
     {
-        for (int i = 0; i < grabbed_items.Length; i++)
-        {
-            grabbed_items[i] = false;
-        }
-
-        GameController.setListItems(grabbed_items);
+        RestartPlayer();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(canMove)
@@ -78,6 +64,16 @@ public class PlayerController : MonoBehaviour
                 Camera.SetOrthographicSize(MinOrthographicSize);
             }
         }
+    }
+
+    public void RestartPlayer()
+    {
+        canMove = true;
+        for (int i = 0; i < grabbed_items.Length; i++)
+        {
+            grabbed_items[i] = false;
+        }
+        GameController.setListItems(grabbed_items);
     }
 
     void FixedUpdate()
