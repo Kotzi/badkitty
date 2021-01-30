@@ -9,8 +9,8 @@ public class ItemContainer : MonoBehaviour
 
     public GameObject player;
     public PlayerController player_controller;
-    public float distance_to_grab = 2.15f;
-    public float distance_to_shake = 3f;
+    public float distance_to_grab;
+    public float distance_to_shake;
     private ShakeCameraController Camera;
 
     // Start is called before the first frame update
@@ -19,7 +19,10 @@ public class ItemContainer : MonoBehaviour
         player_controller = Object.FindObjectOfType<PlayerController>();
         player = player_controller.gameObject;
         Camera = Object.FindObjectOfType<ShakeCameraController>();
-    }
+
+        distance_to_grab = 2.15f;
+        distance_to_shake = 3f;
+}
 
     // Update is called once per frame
     void Update()
