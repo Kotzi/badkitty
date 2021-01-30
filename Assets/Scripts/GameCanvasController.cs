@@ -10,7 +10,22 @@ public class GameCanvasController : MonoBehaviour
        [SerializeField] Text KeysText;
        [SerializeField] Text CarKeysText;
        [SerializeField] Text WalletText;
+       
+       void Start(){
+           FaceMaskText.text = LanguageController.Shared.getFaceMaskText();
+           KeysText.text = LanguageController.Shared.getKeysText();
+           CarKeysText.text= LanguageController.Shared.getCarKeysText();
+           WalletText.text = LanguageController.Shared.getWalletText();
 
+            countdownText.enabled=true;
+           FaceMaskText.enabled=true;
+           KeysText.enabled=true;
+           CarKeysText.enabled=true;
+           WalletText.enabled=true;
+
+
+
+       }
        public void setCountdownText(string s){
               countdownText.text= s;
        }
