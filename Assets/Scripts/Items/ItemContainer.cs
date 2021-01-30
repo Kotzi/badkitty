@@ -26,7 +26,8 @@ public class ItemContainer : MonoBehaviour
             if (item != null)
             {
                 item.Grab();
-                //item = null;
+                player.GetComponent<PlayerController>().GrabItem(item.item_type);
+                item = null;
             }
             else
                 Debug.Log("There is nothing here!");
