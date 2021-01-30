@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     private int dx, dy;
     private bool isMoving = false;
 
-    private bool[] grabbed_items = new bool[(int)ItemType.N_TYPES];
+    public bool[] grabbed_items = new bool[(int)ItemType.N_TYPES];
     public bool FaceMask = false;
     public bool HomeKeys = false;
     public bool CarKey = false;
