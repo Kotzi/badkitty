@@ -36,8 +36,8 @@ public class PlayerController : MonoBehaviour
             {
                 StillTimer += Time.deltaTime;
 
-                float horizontal_input = Input.GetAxis("Horizontal");
-                float vertical_input = Input.GetAxis("Vertical");
+                float horizontal_input = Input.GetAxisRaw("Horizontal");
+                float vertical_input = Input.GetAxisRaw("Vertical");
 
                 if (horizontal_input != 0 && vertical_input != 0)
                 {
