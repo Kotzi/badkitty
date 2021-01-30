@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour
     public GameCanvasController gameCanvasController;
     public PauseMenuController PauseMenuController;
 
-    bool isTimerActive = true;
+    bool isTimerActive = false;
     float currentTime = 0f;
     bool isPaused = false;
     public LightController MainLight;
@@ -64,8 +64,8 @@ public class GameController : MonoBehaviour
 
     void StartNight()
     {
+        YouWon.gameObject.SetActive(false);
         Player.RestartPlayer();
-        ToggleTimerActivate();
         var originalLightIntensity = MainLight.intensity;
         MainLight.SetIntensity(0.5f, 1f, () => {
             Cat.WakeUp();
@@ -109,6 +109,7 @@ public class GameController : MonoBehaviour
 
     public void DoorOpened()
     {
+        ToggleTimerActivate();
         YouWon.gameObject.SetActive(true);
     }
 }

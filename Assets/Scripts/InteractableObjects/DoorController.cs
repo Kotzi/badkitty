@@ -4,28 +4,19 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    public GameObject player;
-    public PlayerController player_controller;
+    public PlayerController PlayerController;
     public GameController GameController;
     public float distance_to_open = 3f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        player_controller = Object.FindObjectOfType<PlayerController>();
-        player = player_controller.gameObject;
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        float distance_to_player = (gameObject.transform.position - player.transform.position).magnitude;
+        float distance_to_player = (gameObject.transform.position - PlayerController.gameObject.transform.position).magnitude;
         //Debug.Log("distance_to_player: " + distance_to_player);
         if (Input.GetKeyDown(KeyCode.E) && distance_to_player < distance_to_open)
         {
             bool all_items_grabbed = true;
-            for (int i = 0; i < player_controller.grabbed_items.Length; i++)
-                if (!player_controller.grabbed_items[i])
+            for (int i = 0; i < PlayerController.grabbed_items.Length; i++)
+                if (!PlayerController.grabbed_items[i])
                 {
                     all_items_grabbed = false;
                     break;

@@ -4385,9 +4385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dafb8152c59e93489aefbf129d7feba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  player_controller: {fileID: 0}
-  GameController: {fileID: 0}
+  PlayerController: {fileID: 3421349364109581134}
+  GameController: {fileID: 597069836}
   distance_to_open: 3
 --- !u!1 &2019057003
 GameObject:
