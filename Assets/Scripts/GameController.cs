@@ -10,6 +10,7 @@ using DG.Tweening;
 public class GameController : MonoBehaviour
 {
     const float startingTime = 60f;
+    const string items = "MASCARILLA  GAFAS LLAVES MOVIL CARTERA";
     public GameObject GameOver;
     public GameObject Player;
     
@@ -27,7 +28,8 @@ public class GameController : MonoBehaviour
     void Start()
     {
         currentTime = startingTime;
-         PlayerController.CanMove =true;
+        PlayerController.CanMove =true;
+        gameCanvasController.setListItems(items);
         StartNight();
     }
 
@@ -70,6 +72,6 @@ public class GameController : MonoBehaviour
     void ToggleTimerActivate() {
         isTimerActive = !isTimerActive;
         gameCanvasController.gameObject.SetActive(isTimerActive);
-       // countdownText.gameObject.SetActive(isTimerActive);
+     
     }
 }
