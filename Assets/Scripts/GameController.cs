@@ -55,6 +55,7 @@ public class GameController : MonoBehaviour
                     currentTime = 0;
                     GameOver.SetActive(true);
                     PlayerController.CanMove =false;
+                    gameCanvasController.hideTimerAndItems();
                 }
             }
         }

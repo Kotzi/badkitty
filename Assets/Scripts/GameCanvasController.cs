@@ -15,6 +15,49 @@ public class GameCanvasController : MonoBehaviour
               countdownText.text= s;
        }
        public void setListItems(bool[] items){
+           //Mask
+           if(items[(int)ItemType.FACE_MASK]){
+                FaceMaskText.fontSize = 30;
+           }
+           else if(!items[(int)ItemType.FACE_MASK]){
+               //Setearlo valores iniciales
+           }
+            //
+           if(items[(int)ItemType.HOME_KEYS]){
+               KeysText.fontSize = 30;
+           }
+           else if(!items[(int)ItemType.HOME_KEYS]){
+
+           }
+
+           if(items[(int)ItemType.CAR_KEY]){
+               CarKeysText.fontSize = 30;
+            
+           }
+           else if(!items[(int)ItemType.CAR_KEY]){
+               
+
+           }
+
+           if(items[(int)ItemType.WALLET]){
+               WalletText.fontSize= 30;
+
+           }
+           else if(!items[(int)ItemType.WALLET]){
+
+           }
+
        
+       }
+
+       public void hideTimerAndItems(){
+           countdownText.enabled=false;
+           FaceMaskText.enabled=false;
+           KeysText.enabled=false;
+           CarKeysText.enabled=false;
+           WalletText.enabled=false;
+
+
+
        }
 }
