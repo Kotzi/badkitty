@@ -11,12 +11,14 @@ public class GameController : MonoBehaviour
 {
     const float startingTime = 10f;
     public GameObject GameOver;
-
     public GameObject Player;
+    
+    public GameCanvasController gameCanvasController;
+
     bool isTimerActive = true;
     float currentTime = 0f;
 
-    [SerializeField] Text countdownText;
+   
     public LightController MainLight;
     public CatController Cat;
     public Image MainOverlay;
@@ -25,6 +27,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         currentTime = startingTime;
+         PlayerController.CanMove =true;
         StartNight();
         
     }
@@ -35,7 +38,7 @@ public class GameController : MonoBehaviour
         if (isTimerActive)
         {
             currentTime -= 1 * Time.deltaTime;
-            countdownText.text= currentTime.ToString("0");
+            gameCanvasController.setCountdownText(currentTime.ToString("0"));
             if(currentTime <= 0){
                 currentTime = 0;
                 GameOver.SetActive(true);
@@ -67,6 +70,7 @@ public class GameController : MonoBehaviour
 
     void ToggleTimerActivate() {
         isTimerActive = !isTimerActive;
-        countdownText.gameObject.SetActive(isTimerActive);
+        gameCanvasController.gameObject.SetActive(isTimerActive);
+       // countdownText.gameObject.SetActive(isTimerActive);
     }
 }
