@@ -6,7 +6,12 @@ public class DoorController : MonoBehaviour
 {
     public PlayerController PlayerController;
     public GameController GameController;
-    public float distance_to_open = 3f;
+    public float distance_to_open;
+
+    private void Start()
+    {
+        distance_to_open = 2.15f;
+    }
 
     void Update()
     {
