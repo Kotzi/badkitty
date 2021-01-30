@@ -1,30 +1,27 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class PauseMenuController : MonoBehaviour
 {
     public Text MuteButtonText;
+    public Text PauseText;
     private AudioController AudioController;
+    private LanguageController LanguageController;
 
     void Awake()
     {
         AudioController = GetComponent<AudioController>();
+        LanguageController = LanguageController.Shared;
+        PauseText.text = LanguageController.getPauseText();
     }
 
     void Update()
     {
-        MuteButtonText.text = AudioController.IsMuted ? "Unmute audio" : "Mute audio";
+        MuteButtonText.text = LanguageController.getMuteButtonText(AudioController.IsMuted);
     }
 
     public void OnClickAudio() 
     {
         AudioController.ToggleMute();
-    }
-
-    public void OnClickRestart() 
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

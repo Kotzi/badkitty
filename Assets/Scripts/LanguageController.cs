@@ -8,6 +8,23 @@ class LanguageController : MonoBehaviour {
         CAT
     }
 
+    private static LanguageController _instance;
+    public static LanguageController Shared {
+        get {
+            if (_instance != null) {
+                return _instance;
+            } else {
+                _instance = Object.FindObjectOfType<LanguageController>();
+                if (_instance != null) {
+                    return _instance;
+                } else {
+                    _instance = (new GameObject()).AddComponent<LanguageController>();
+                    return _instance;
+                }
+            }
+        }
+    }
+
     void Awake()
     {
         DontDestroyOnLoad(this);
@@ -32,6 +49,17 @@ class LanguageController : MonoBehaviour {
             case Language.EN: return muted ? "Unmute audio" : "Mute audio";
             case Language.ES: return muted ? "Activar sonido" : "Desactivar sonido";
             case Language.CAT: return muted ? "Activa so" : "Silencia";
+        }
+
+        return "";
+    }
+
+    public string getPauseText() {
+        switch (CurrentLanguage) 
+        {
+            case Language.EN: return "Pause";
+            case Language.ES: return "Pausa";
+            case Language.CAT: return "CAT";
         }
 
         return "";

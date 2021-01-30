@@ -4,21 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-
-
-
 public class GameController : MonoBehaviour
 {
     const float startingTime = 10f;
+    public GameObject YouWon;
     public GameObject GameOver;
     public GameObject Player;
     
     public GameCanvasController gameCanvasController;
+    public PauseMenuController PauseMenuController;
 
     bool isTimerActive = true;
     float currentTime = 0f;
-
-   
+    bool isPaused = false;
     public LightController MainLight;
     public CatController Cat;
     public Image MainOverlay;
@@ -34,14 +32,30 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isTimerActive)
+        if(Input.GetKeyDown(KeyCode.Escape) && !GameOver.activeSelf && !YouWon.activeSelf)
         {
-            currentTime -= 1 * Time.deltaTime;
-            gameCanvasController.setCountdownText(currentTime.ToString("0"));
-            if(currentTime <= 0){
-                currentTime = 0;
-                GameOver.SetActive(true);
-                PlayerController.CanMove =false;
+            if(isPaused)
+            {
+                UnpauseGame();
+            }
+            else 
+            {
+                PauseGame();
+            }
+            return;
+        }
+
+        if (!isPaused) 
+        {
+            if (isTimerActive)
+            {
+                currentTime -= 1 * Time.deltaTime;
+                gameCanvasController.setCountdownText(currentTime.ToString("0"));
+                if(currentTime <= 0){
+                    currentTime = 0;
+                    GameOver.SetActive(true);
+                    PlayerController.CanMove =false;
+                }
             }
         }
     }
@@ -70,6 +84,17 @@ public class GameController : MonoBehaviour
     void ToggleTimerActivate() {
         isTimerActive = !isTimerActive;
         gameCanvasController.gameObject.SetActive(isTimerActive);
-       // countdownText.gameObject.SetActive(isTimerActive);
+    }
+
+    void PauseGame()
+    {
+        Time.timeScale = 0f;
+        PauseMenuController.gameObject.SetActive(true);
+    }
+
+    void UnpauseGame()
+    {
+        Time.timeScale = 1f;
+        PauseMenuController.gameObject.SetActive(false);
     }
 }

@@ -14,7 +14,7 @@ public class MainMenuController : MonoBehaviour
     {
         AudioController = GetComponent<AudioController>();
         SceneManagerController = Object.FindObjectOfType<SceneManagerController>();
-        LanguageController = Object.FindObjectOfType<LanguageController>();
+        LanguageController = LanguageController.Shared;
         ReloadTexts();
     }
 
