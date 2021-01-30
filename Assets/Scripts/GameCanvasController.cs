@@ -20,6 +20,38 @@ public class GameCanvasController : MonoBehaviour
        public void setCountdownText(string s){
               countdownText.text= s;
        }
+
+    private bool isScaling = false;
+    public void playerIsCloseTo(ItemType item)
+    {
+        if (!isScaling)
+        {
+            Text textToScale = FaceMaskText;
+            switch(item){
+                case ItemType.FACE_MASK:
+                    textToScale = FaceMaskText;
+                    break;
+                case ItemType.CAR_KEY:
+                    textToScale = CarKeysText;
+                    break;
+                case ItemType.HOME_KEYS:
+                    textToScale = KeysText;
+                    break;
+                case ItemType.WALLET:
+                    textToScale = WalletText;
+                    break;
+            }
+
+            isScaling = true;
+            var scale = textToScale.transform.localScale;
+            textToScale.transform.DOScale(scale * 1.1f, 0.25f).OnComplete(() => { 
+                textToScale.transform.DOScale(scale, 0.25f).OnComplete(() => { 
+                    isScaling = false;
+                });
+            });
+        }
+    }
+
        public void setListItems(bool[] items){
             SetTextColor(FaceMaskText, items[(int)ItemType.FACE_MASK] ? Color.green : Color.red);
             SetTextColor(KeysText, items[(int)ItemType.HOME_KEYS] ? Color.green : Color.red);

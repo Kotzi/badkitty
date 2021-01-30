@@ -350,7 +350,6 @@ GameObject:
   - component: {fileID: 413526574}
   - component: {fileID: 413526573}
   - component: {fileID: 413526575}
-  - component: {fileID: 413526576}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -418,18 +417,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ed903157e42e48f6b354f51e3cbbd5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &413526576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413526572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecbd80e7755174e24a88ed8ac85ed69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &447404837
@@ -1525,7 +1512,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1606,7 +1593,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 2
-      m_TileSpriteIndex: 3
+      m_TileSpriteIndex: 17
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2353,15 +2340,13 @@ Tilemap:
   - m_RefCount: 17
     m_Data: {fileID: -5941169604743958949, guid: d578c6100537bc24d9cc00712715eef5,
       type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -6895159605021060365, guid: d578c6100537bc24d9cc00712715eef5,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 6
     m_Data: {fileID: -2213241776627324606, guid: d578c6100537bc24d9cc00712715eef5,
       type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -7236703542899512146, guid: d578c6100537bc24d9cc00712715eef5,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 13
     m_Data: {fileID: 2899455177250431656, guid: d578c6100537bc24d9cc00712715eef5,
       type: 3}
@@ -2394,10 +2379,12 @@ Tilemap:
       type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 462182950194569432, guid: d578c6100537bc24d9cc00712715eef5, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -6895159605021060365, guid: d578c6100537bc24d9cc00712715eef5,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -7236703542899512146, guid: d578c6100537bc24d9cc00712715eef5,
+      type: 3}
   m_TileMatrixArray:
   - m_RefCount: 132
     m_Data:
@@ -3228,7 +3215,6 @@ GameObject:
   - component: {fileID: 1180892691}
   - component: {fileID: 1180892693}
   - component: {fileID: 1180892692}
-  - component: {fileID: 1180892694}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -3305,23 +3291,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1180892694
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180892690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
-  m_PivotOffset: {x: 0, y: 0, z: 0}
-  m_AmplitudeGain: 1
-  m_FrequencyGain: 1
-  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &1230363643
 GameObject:
   m_ObjectHideFlags: 0
@@ -11856,51 +11825,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 942686994684303627, guid: 4100e1ba7fcac43e59bab99c719b21f2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793719904779581976, guid: 4100e1ba7fcac43e59bab99c719b21f2,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793719904779581976, guid: 4100e1ba7fcac43e59bab99c719b21f2,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793719904779581976, guid: 4100e1ba7fcac43e59bab99c719b21f2,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793719904779581976, guid: 4100e1ba7fcac43e59bab99c719b21f2,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793719904779581976, guid: 4100e1ba7fcac43e59bab99c719b21f2,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793719904779581976, guid: 4100e1ba7fcac43e59bab99c719b21f2,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -107
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793719904779581976, guid: 4100e1ba7fcac43e59bab99c719b21f2,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -101
-      objectReference: {fileID: 0}
-    - target: {fileID: 2793719904779581979, guid: 4100e1ba7fcac43e59bab99c719b21f2,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 2793719906386941427, guid: 4100e1ba7fcac43e59bab99c719b21f2,
         type: 3}
       propertyPath: m_Pivot.x
@@ -12015,16 +11939,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3835266910282279001, guid: 4100e1ba7fcac43e59bab99c719b21f2,
-        type: 3}
-      propertyPath: lisItems
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5545408563971190113, guid: 4100e1ba7fcac43e59bab99c719b21f2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4100e1ba7fcac43e59bab99c719b21f2, type: 3}
