@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerController : MonoBehaviour
 {
     const float MinOrthographicSize = 5f;
@@ -17,15 +18,24 @@ public class PlayerController : MonoBehaviour
     private int dx, dy;
     private bool isMoving = false;
 
+    public static bool canMove = true;
+    public static bool CanMove{
+        get{return canMove; }
+        set{canMove = value;}
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+ 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(canMove){
+
+       
         if (!isMoving)
         {
             dx = Input.GetAxis("Horizontal") > 0.01f ? 1 : (Input.GetAxis("Horizontal") < -0.01f ? -1 : 0);
@@ -57,6 +67,7 @@ public class PlayerController : MonoBehaviour
         {
             Camera.SetOrthographicSize(MinOrthographicSize);
         }
+    }
     }
 
     void FixedUpdate()

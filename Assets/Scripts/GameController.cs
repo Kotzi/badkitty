@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     public GameObject GameOver;
+    public GameObject Player;
     float currentTime = 0f;
     float startingTime = 10f;
 
@@ -28,6 +29,7 @@ public class GameController : MonoBehaviour
         if(currentTime <= 0){
             currentTime = 0;
             GameOver.SetActive(true);
+            PlayerController.CanMove =false;
         }
         
 
