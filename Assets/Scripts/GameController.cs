@@ -106,9 +106,9 @@ public class GameController : MonoBehaviour
         PauseMenuController.gameObject.SetActive(false);
     }
 
-    public void playerIsCloseTo(ItemType item)
+    public void playerIsCloseTo(ItemType item, float distance)
     {
-        gameCanvasController.playerIsCloseTo(item);
+        gameCanvasController.playerIsCloseTo(item, distance);
     }
 
     public void setListItems(bool[] items)

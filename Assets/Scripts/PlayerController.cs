@@ -112,9 +112,9 @@ public class PlayerController : MonoBehaviour
         GameController.setListItems(grabbed_items);
     }
 
-    public void IsCloseTo(ItemType item)
+    public void IsCloseTo(ItemType item, float distance)
     {
-        GameController.playerIsCloseTo(item);
+        GameController.playerIsCloseTo(item, distance);
     }
     private void setDisplacement(float new_dx, float new_dy) { dx = new_dx; dy = new_dy; }
 }
