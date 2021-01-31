@@ -68,9 +68,9 @@ class LanguageController : MonoBehaviour {
     public string getYouWonText() {
         switch (CurrentLanguage) 
         {
-            case Language.EN: return "You won!";
-            case Language.ES: return "Has ganado!";
-            case Language.CAT: return "Has guanyat!";
+            case Language.EN: return "You won, you got out of your home!";
+            case Language.ES: return "Has ganado, lograste salir de tu casa!";
+            case Language.CAT: return "";
         }
 
         return "";
