@@ -21,12 +21,14 @@ public class GameCanvasController : MonoBehaviour
         [SerializeField] Image WalletImage;
         [SerializeField] Sprite WalletSpriteOn;
         [SerializeField] Sprite WalletSpriteOff;
-       
+       [SerializeField] Text InstructionText;       
        void Start(){
            FaceMaskText.text = LanguageController.Shared.getFaceMaskText();
            KeysText.text = LanguageController.Shared.getKeysText();
            CarKeysText.text= LanguageController.Shared.getCarKeysText();
            WalletText.text = LanguageController.Shared.getWalletText();
+           InstructionText.text = LanguageController.Shared.getInitialInstruction();
+          
        }
 
        public void setCountdownText(string s){
@@ -129,6 +131,19 @@ public class GameCanvasController : MonoBehaviour
                                 });
                         });
                 });
+        }
+    }
+
+    public void setInstruction(string s){
+       if(s ==" INITIAL"){
+            InstructionText.text = LanguageController.Shared.getInitialInstruction();
+       }
+        else if(s == "MIDDLE"){
+             InstructionText.text = LanguageController.Shared.getMiddleInstruction();
+
+        }
+        else if(s == "LAST"){
+            InstructionText.text = LanguageController.Shared.getLastInstruction();
         }
     }
 }
