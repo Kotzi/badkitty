@@ -5,6 +5,7 @@ using DG.Tweening;
 public class GameController : MonoBehaviour
 {
     const float startingTime = 60f;
+    public AudioSource DoorAudioSource;
     public SpriteRenderer PlayerInBed;
     public YouWonController YouWon;
     public GameOverController GameOver;
@@ -136,6 +137,7 @@ public class GameController : MonoBehaviour
 
     public void DoorOpened()
     {
+        DoorAudioSource.Play();
         ToggleTimerActivate();
         YouWon.UpdateDay(currentDay.ToString("0"));
         YouWon.gameObject.SetActive(true);
