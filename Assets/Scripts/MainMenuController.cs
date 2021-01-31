@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MainMenuController : MonoBehaviour
 {
     public Text StartButtonText;
-    public Text IntroText;
+    public TextMeshProUGUI IntroText;
     public SoundButton SoundButton;
     private LanguageController LanguageController;
     private SceneManagerController SceneManagerController;
