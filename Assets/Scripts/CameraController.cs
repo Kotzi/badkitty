@@ -3,7 +3,7 @@ using Cinemachine;
 
 public class CameraController : MonoBehaviour
 {
-    private CinemachineVirtualCamera CinemachineVirtualCamera;
+    public CinemachineVirtualCamera CinemachineVirtualCamera;
     private float DefaultCameraOrthographicSize = 0f;    
     private float DesiredCameraOrthographicSize = 0f;
     private float AdjustZoomMaxTime = 0.5f;

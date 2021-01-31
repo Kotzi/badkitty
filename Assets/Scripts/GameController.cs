@@ -40,10 +40,12 @@ public class GameController : MonoBehaviour
             if(isPaused)
             {
                 UnpauseGame();
+                isPaused = false;
             }
             else 
             {
                 PauseGame();
+                isPaused = true;
             }
             return;
         }
@@ -72,24 +74,19 @@ public class GameController : MonoBehaviour
         MainAudioSource.Stop();
         YouWon.gameObject.SetActive(false);
         Player.RestartPlayer();
-        var originalLightIntensity = MainLight.intensity;
-        MainLight.SetIntensity(0.5f, 1f, () => {
-            Cat.WakeUp();
-            MainOverlay.DOColor(Color.black, 0.75f)
-                    .OnComplete(() => {
-                        var color = Color.black;
-                        color.a = 0f;
-                        MainOverlay.DOColor(color, 0.75f)
-                                    .OnComplete(() => {
-                                        MainLight.SetIntensity(originalLightIntensity, 1f, () => {
-                                            MainAudioSource.Play();
-                                            currentTime = startingTime;
-                                            ToggleTimerActivate();
-                                            Player.canMove = true;
-                                        });
-                                    });
-                    });
-        });
+        Cat.WakeUp();
+        MainOverlay.DOColor(Color.black, 1f)
+                .OnComplete(() => {
+                    var color = Color.black;
+                    color.a = 0f;
+                    MainOverlay.DOColor(color, 1f)
+                                .OnComplete(() => {
+                                    MainAudioSource.Play();
+                                    currentTime = startingTime;
+                                    ToggleTimerActivate();
+                                    Player.canMove = true;
+                                });
+                });
     }
 
     void ToggleTimerActivate() {

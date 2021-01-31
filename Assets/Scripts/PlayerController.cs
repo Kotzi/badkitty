@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    const float MinOrthographicSize = 1.2f;
-    const float MaxOrthographicSize = 2f;
+    const float MinOrthographicSize = 1.8f;
+    const float MaxOrthographicSize = 2.8f;
     const float Velocity = 3f;
     const float StillThreshold = 1f;
     private float StillTimer = 0f;
@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        Camera.CinemachineVirtualCamera.m_Lens.OrthographicSize = MinOrthographicSize;
         RestartPlayer();
     }
 

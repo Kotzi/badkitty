@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 public class SceneManagerController: MonoBehaviour
 {
     private Animator Animator;
-    private int CurrentSceneIndex = 0;
+    public int CurrentSceneIndex = 0;
     
     void Awake()
     {
@@ -12,7 +12,7 @@ public class SceneManagerController: MonoBehaviour
 
     public void GoToNexScene()
     {
-        if(CurrentSceneIndex < SceneManager.sceneCount)
+        if(CurrentSceneIndex < 2) // SceneManager.sceneCount)
         {
             CurrentSceneIndex += 1;
             Animator.SetTrigger("FadeOut");
