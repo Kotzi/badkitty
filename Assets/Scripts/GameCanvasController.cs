@@ -22,7 +22,7 @@ public class GameCanvasController : MonoBehaviour
        }
 
     private bool isScaling = false;
-    public void playerIsCloseTo(ItemType item)
+    public void playerIsCloseTo(ItemType item, float distance)
     {
         if (!isScaling)
         {
@@ -43,9 +43,11 @@ public class GameCanvasController : MonoBehaviour
             }
 
             isScaling = true;
-            var scale = textToScale.transform.localScale;
-            textToScale.transform.DOScale(scale * 1.1f, 0.25f).OnComplete(() => { 
-                textToScale.transform.DOScale(scale, 0.25f).OnComplete(() => { 
+            var originalScale = textToScale.transform.localScale;
+            var p = (1/Mathf.Max(distance - 1.15f, 1.1f)) * 0.5f;
+            var maxScale = originalScale * Mathf.Exp(p);
+            textToScale.transform.DOScale(maxScale, 0.25f).OnComplete(() => { 
+                textToScale.transform.DOScale(originalScale, 0.25f).OnComplete(() => { 
                     isScaling = false;
                 });
             });
@@ -65,7 +67,7 @@ public class GameCanvasController : MonoBehaviour
         text.color = color;
         if (oldColor != color)
         {
-            var originalScale = text.transform.localScale;
+            var originalScale = Vector3.one;
             var scaled = Vector3.one * 1.2f;
             text.transform.DOScale(scaled, 0.25f).OnComplete(() => {
                 text.transform.DOScale(originalScale, 0.15f).OnComplete(() => {

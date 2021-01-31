@@ -4,23 +4,21 @@ using UnityEngine;
 
 public class ItemContainer : MonoBehaviour
 {
+    private const float distance_to_grab = 2.15f;
+    private const float distance_to_shake = 3f;
+
     public int Item_Container_ID = 0;
     public Item item;
 
     public GameObject player;
     public PlayerController player_controller;
-    public float distance_to_grab;
-    public float distance_to_shake;
 
     // Start is called before the first frame update
     void Start()
     {
         player_controller = Object.FindObjectOfType<PlayerController>();
-        player = player_controller.gameObject;
-
-        distance_to_grab = 2.15f;
-        distance_to_shake = 3f;
-}
+        player = player_controller.gameObject;        
+    }
 
     // Update is called once per frame
     void Update()
@@ -28,7 +26,7 @@ public class ItemContainer : MonoBehaviour
         float distance_to_player = (gameObject.transform.position - player.transform.position).magnitude;
         if (item != null && distance_to_player < distance_to_shake)
         {
-            player_controller.IsCloseTo(item.item_type);
+            player_controller.IsCloseTo(item.item_type, distance_to_player);
         }
         
         if (Input.GetKeyDown(KeyCode.E) && distance_to_player < distance_to_grab)
