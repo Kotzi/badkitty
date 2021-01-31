@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class GameOverController : MonoBehaviour
 {
     public AudioSource GameOverAudioSource;
+    public AudioSource PopAudioSource;
     public Text GameOverText;
     public Text RetryButtonText;
     
@@ -18,7 +19,7 @@ public class GameOverController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space)) 
         {
-            OnClickRetry();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
@@ -34,6 +35,7 @@ public class GameOverController : MonoBehaviour
 
     public void OnClickRetry() 
     {
+        PopAudioSource.Play();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
     public SpriteRenderer PlayerSpriteRenderer;
     public CameraController Camera;
     public GameController GameController;
+    public AudioSource ItemPickupAudioSource;
+    public AudioSource WalkingAudioSource;
+
     private float dx, dy;
     private bool isMoving = false;
     private bool horizontal_priority = true;
@@ -88,10 +91,20 @@ public class PlayerController : MonoBehaviour
     {
         if (isMoving)
         {
+            if(!WalkingAudioSource.isPlaying) 
+            {
+                WalkingAudioSource.Play();
+            }
             float dt = Time.fixedDeltaTime;
             gameObject.transform.position += new Vector3(dx, dy, 0f) * dt * Velocity;
             isMoving = false;
             StillTimer = 0f;
+        } 
+        else 
+        {
+            if(WalkingAudioSource.isPlaying) {
+                WalkingAudioSource.Stop();
+            }
         }
     }
 
@@ -141,6 +154,8 @@ public class PlayerController : MonoBehaviour
                     ItemSpriteRenderer.transform.localPosition = originalPosition;
                     ItemSpriteRenderer.color = originalColor;
                 });
+
+        ItemPickupAudioSource.Play();
 
         GameController.setListItems(grabbed_items);
     }

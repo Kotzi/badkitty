@@ -139,7 +139,7 @@ public class GameController : MonoBehaviour
     {
         DoorAudioSource.Play();
         ToggleTimerActivate();
-        YouWon.UpdateDay(currentDay.ToString("0"));
+        YouWon.Show(currentDay.ToString("0"));
         YouWon.gameObject.SetActive(true);
     }
 }

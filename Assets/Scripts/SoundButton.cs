@@ -6,6 +6,7 @@ public class SoundButton : MonoBehaviour
     public Sprite ImageOn;
     public Sprite ImageOff;
     public AudioController AudioController;
+    public AudioSource PopSound;
 
     private Image Image;
 
@@ -17,6 +18,7 @@ public class SoundButton : MonoBehaviour
     public void OnClick() 
     {
         AudioController.ToggleMute();
+        PopSound.Play();
         Image.sprite = AudioController.IsMuted ? ImageOff : ImageOn;
     }
 }
