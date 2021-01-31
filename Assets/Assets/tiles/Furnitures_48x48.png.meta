@@ -1,136 +1,7 @@
 fileFormatVersion: 2
-guid: d578c6100537bc24d9cc00712715eef5
+guid: eed4e1182c317eb45a7fb23db3db0d91
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 6731673706401566692
-    second: ParedesBano_48x48_0
-  - first:
-      213: 5325690470074984142
-    second: ParedesBano_48x48_1
-  - first:
-      213: -5246410280530730235
-    second: ParedesBano_48x48_2
-  - first:
-      213: 5705579983211133994
-    second: ParedesBano_48x48_3
-  - first:
-      213: -1037593821434222098
-    second: ParedesBano_48x48_4
-  - first:
-      213: -4024362564871560933
-    second: ParedesBano_48x48_5
-  - first:
-      213: 6245024959481889085
-    second: ParedesBano_48x48_6
-  - first:
-      213: 6022517691305007873
-    second: ParedesBano_48x48_7
-  - first:
-      213: 8801987774116823687
-    second: ParedesBano_48x48_8
-  - first:
-      213: -2288375305271852300
-    second: ParedesBano_48x48_9
-  - first:
-      213: -2498450958006106496
-    second: ParedesBano_48x48_10
-  - first:
-      213: 8221774880306080990
-    second: ParedesBano_48x48_11
-  - first:
-      213: 7404093279012895254
-    second: ParedesBano_48x48_12
-  - first:
-      213: 2899455177250431656
-    second: ParedesBano_48x48_13
-  - first:
-      213: -1117503082501110111
-    second: ParedesBano_48x48_14
-  - first:
-      213: -2213241776627324606
-    second: ParedesBano_48x48_15
-  - first:
-      213: 462182950194569432
-    second: ParedesBano_48x48_16
-  - first:
-      213: 7267741855315645710
-    second: ParedesBano_48x48_17
-  - first:
-      213: -6895159605021060365
-    second: ParedesBano_48x48_18
-  - first:
-      213: 7154639218270929020
-    second: ParedesBano_48x48_19
-  - first:
-      213: 64656793562212624
-    second: ParedesBano_48x48_20
-  - first:
-      213: 3370196421118787794
-    second: ParedesBano_48x48_21
-  - first:
-      213: -2790281472955677412
-    second: ParedesBano_48x48_22
-  - first:
-      213: 8860188692644413698
-    second: ParedesBano_48x48_23
-  - first:
-      213: -3584699960868177981
-    second: ParedesBano_48x48_24
-  - first:
-      213: -7236703542899512146
-    second: ParedesBano_48x48_25
-  - first:
-      213: -7173783161362431572
-    second: ParedesBano_48x48_26
-  - first:
-      213: -4943364449421395841
-    second: ParedesBano_48x48_27
-  - first:
-      213: 5474762921109969111
-    second: ParedesBano_48x48_28
-  - first:
-      213: 4252309780544698994
-    second: ParedesBano_48x48_29
-  - first:
-      213: -4699968824353252572
-    second: ParedesBano_48x48_30
-  - first:
-      213: -5941169604743958949
-    second: ParedesBano_48x48_31
-  - first:
-      213: -1948524857883237664
-    second: ParedesBano_48x48_32
-  - first:
-      213: -7248442182168038113
-    second: ParedesBano_48x48_33
-  - first:
-      213: -8616056158437256130
-    second: ParedesBano_48x48_34
-  - first:
-      213: -2802878545731996181
-    second: ParedesBano_48x48_35
-  - first:
-      213: -6337734694584406925
-    second: ParedesBano_48x48_36
-  - first:
-      213: 5044911031414517813
-    second: ParedesBano_48x48_37
-  - first:
-      213: -7415448740535152578
-    second: ParedesBano_48x48_38
-  - first:
-      213: 311536423800379588
-    second: ParedesBano_48x48_39
-  - first:
-      213: 275917720002230206
-    second: ParedesBano_48x48_40
-  - first:
-      213: -8604873671052877442
-    second: ParedesBano_48x48_41
-  - first:
-      213: 1809374530729238561
-    second: ParedesBano_48x48_42
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -216,11 +87,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ParedesBano_48x48_0
+      name: Furnitures_48x48_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 432
+        x: 730
+        y: 1136
         width: 48
         height: 48
       alignment: 0
@@ -230,18 +101,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ef07ede195bb6d50800000000000000
-      internalID: 6731673706401566692
+      spriteID: 738b7ffa88a1df840800000000000000
+      internalID: 5259389114208729143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_1
+      name: Furnitures_48x48_1
       rect:
         serializedVersion: 2
-        x: 96
-        y: 432
+        x: 778
+        y: 1136
         width: 48
         height: 48
       alignment: 0
@@ -251,18 +122,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec6a08c0447a8e940800000000000000
-      internalID: 5325690470074984142
+      spriteID: a594321387fb44460800000000000000
+      internalID: 7225110225150495066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_2
+      name: Furnitures_48x48_2
       rect:
         serializedVersion: 2
-        x: 192
-        y: 432
+        x: 826
+        y: 1136
         width: 48
         height: 48
       alignment: 0
@@ -272,18 +143,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 503220385a10137b0800000000000000
-      internalID: -5246410280530730235
+      spriteID: 5562e0bbbbe6a8650800000000000000
+      internalID: 6235918386624079445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_3
+      name: Furnitures_48x48_3
       rect:
         serializedVersion: 2
-        x: 240
-        y: 432
+        x: 730
+        y: 1088
         width: 48
         height: 48
       alignment: 0
@@ -293,18 +164,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2cf0e8e3ca4e2f40800000000000000
-      internalID: 5705579983211133994
+      spriteID: caffe7179e81d4c00800000000000000
+      internalID: 886392092572450732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_4
+      name: Furnitures_48x48_4
       rect:
         serializedVersion: 2
-        x: 336
-        y: 432
+        x: 778
+        y: 1088
         width: 48
         height: 48
       alignment: 0
@@ -314,18 +185,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee9e544bae9b991f0800000000000000
-      internalID: -1037593821434222098
+      spriteID: d1c4decd93c09b4b0800000000000000
+      internalID: -5424290833531843555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_5
+      name: Furnitures_48x48_5
       rect:
         serializedVersion: 2
-        x: 384
-        y: 432
+        x: 826
+        y: 1088
         width: 48
         height: 48
       alignment: 0
@@ -335,18 +206,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b116379b1979628c0800000000000000
-      internalID: -4024362564871560933
+      spriteID: fadf9c41fe2302930800000000000000
+      internalID: 4116346061843987887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_6
+      name: Furnitures_48x48_6
       rect:
         serializedVersion: 2
-        x: 48
-        y: 192
+        x: 912
+        y: 1088
         width: 48
         height: 48
       alignment: 0
@@ -356,18 +227,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d31cd53fc19caa650800000000000000
-      internalID: 6245024959481889085
+      spriteID: 44f792fdd3be80040800000000000000
+      internalID: 4614196469210644292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_7
+      name: Furnitures_48x48_7
       rect:
         serializedVersion: 2
-        x: 96
-        y: 384
+        x: 960
+        y: 1088
         width: 48
         height: 48
       alignment: 0
@@ -377,18 +248,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10b9dbb7ee7449350800000000000000
-      internalID: 6022517691305007873
+      spriteID: f6d52487e82670790800000000000000
+      internalID: -7563968685102965393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_8
+      name: Furnitures_48x48_8
       rect:
         serializedVersion: 2
-        x: 192
-        y: 384
+        x: 1008
+        y: 1088
         width: 48
         height: 48
       alignment: 0
@@ -398,18 +269,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7828091ee31f62a70800000000000000
-      internalID: 8801987774116823687
+      spriteID: d90af3883320f6d70800000000000000
+      internalID: 9038445397508333725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_9
+      name: Furnitures_48x48_9
       rect:
         serializedVersion: 2
-        x: 240
-        y: 384
+        x: 576
+        y: 1040
         width: 48
         height: 48
       alignment: 0
@@ -419,18 +290,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f2ce70c8ce0e30e0800000000000000
-      internalID: -2288375305271852300
+      spriteID: 745b1134110efd570800000000000000
+      internalID: 8493753786988344647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_10
+      name: Furnitures_48x48_10
       rect:
         serializedVersion: 2
-        x: 336
-        y: 384
+        x: 624
+        y: 1040
         width: 48
         height: 48
       alignment: 0
@@ -440,18 +311,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 086cf4f4718b35dd0800000000000000
-      internalID: -2498450958006106496
+      spriteID: 5ae366708a0ac3f60800000000000000
+      internalID: 8015458080351731365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_11
+      name: Furnitures_48x48_11
       rect:
         serializedVersion: 2
-        x: 384
-        y: 384
+        x: 672
+        y: 1040
         width: 48
         height: 48
       alignment: 0
@@ -461,18 +332,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edcafdb51bc991270800000000000000
-      internalID: 8221774880306080990
+      spriteID: bb48e2006507c44b0800000000000000
+      internalID: -5454861533979966277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_12
+      name: Furnitures_48x48_12
       rect:
         serializedVersion: 2
-        x: 96
-        y: 288
+        x: 720
+        y: 1040
         width: 48
         height: 48
       alignment: 0
@@ -482,18 +353,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61abb63db9f90c660800000000000000
-      internalID: 7404093279012895254
+      spriteID: 17245873358f41390800000000000000
+      internalID: -7848375214302477711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_13
+      name: Furnitures_48x48_13
       rect:
         serializedVersion: 2
-        x: 144
-        y: 311
+        x: 768
+        y: 1040
         width: 48
         height: 48
       alignment: 0
@@ -503,18 +374,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a2ed2a2f1fec3820800000000000000
-      internalID: 2899455177250431656
+      spriteID: bf462a7d52909ffa0800000000000000
+      internalID: -5766567789735025413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_14
+      name: Furnitures_48x48_14
       rect:
         serializedVersion: 2
-        x: 192
-        y: 288
+        x: 816
+        y: 1040
         width: 48
         height: 48
       alignment: 0
@@ -524,18 +395,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a60e140ed4dd70f0800000000000000
-      internalID: -1117503082501110111
+      spriteID: 565dcec31b8abb460800000000000000
+      internalID: 7258580703622518117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_15
+      name: Furnitures_48x48_15
       rect:
         serializedVersion: 2
-        x: 240
-        y: 288
+        x: 912
+        y: 1040
         width: 48
         height: 48
       alignment: 0
@@ -545,18 +416,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 249e216945cf841e0800000000000000
-      internalID: -2213241776627324606
+      spriteID: 1f0bee5f7a9a341e0800000000000000
+      internalID: -2214740052885458703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_16
+      name: Furnitures_48x48_16
       rect:
         serializedVersion: 2
-        x: 288
-        y: 288
+        x: 960
+        y: 1040
         width: 48
         height: 48
       alignment: 0
@@ -566,18 +437,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d0e697c1f00a6600800000000000000
-      internalID: 462182950194569432
+      spriteID: b73fdd0f5aa5243d0800000000000000
+      internalID: -3223914714486672517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_17
+      name: Furnitures_48x48_17
       rect:
         serializedVersion: 2
-        x: 336
-        y: 288
+        x: 1008
+        y: 1040
         width: 48
         height: 48
       alignment: 0
@@ -587,18 +458,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e05d35516b43cd460800000000000000
-      internalID: 7267741855315645710
+      spriteID: 165aa34251445efc0800000000000000
+      internalID: -3466289480598903455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_18
+      name: Furnitures_48x48_18
       rect:
         serializedVersion: 2
-        x: 96
-        y: 240
+        x: 1056
+        y: 1040
         width: 48
         height: 48
       alignment: 0
@@ -608,18 +479,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f2d8111fd87f40a0800000000000000
-      internalID: -6895159605021060365
+      spriteID: 40881e341cc1b9500800000000000000
+      internalID: 403948207972911108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_19
+      name: Furnitures_48x48_19
       rect:
         serializedVersion: 2
-        x: 144
-        y: 263
+        x: 1104
+        y: 1040
         width: 48
         height: 48
       alignment: 0
@@ -629,18 +500,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c700e1d46726a4360800000000000000
-      internalID: 7154639218270929020
+      spriteID: ffa373c725aa57fb0800000000000000
+      internalID: -4650623768942134529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_20
+      name: Furnitures_48x48_20
       rect:
         serializedVersion: 2
-        x: 192
-        y: 240
+        x: 1164
+        y: 1051
         width: 48
         height: 48
       alignment: 0
@@ -650,18 +521,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 019679cd205b5e000800000000000000
-      internalID: 64656793562212624
+      spriteID: dbf0902d6251515d0800000000000000
+      internalID: -3092542312643227715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_21
+      name: Furnitures_48x48_21
       rect:
         serializedVersion: 2
-        x: 240
-        y: 240
+        x: 1218
+        y: 1058
         width: 48
         height: 48
       alignment: 0
@@ -671,18 +542,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d00418f9c755ce20800000000000000
-      internalID: 3370196421118787794
+      spriteID: c79f8012b92de9550800000000000000
+      internalID: 6169600103260158332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_22
+      name: Furnitures_48x48_22
       rect:
         serializedVersion: 2
-        x: 288
-        y: 240
+        x: 576
+        y: 992
         width: 48
         height: 48
       alignment: 0
@@ -692,18 +563,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c158f1da8cde649d0800000000000000
-      internalID: -2790281472955677412
+      spriteID: bf9da5e1890d55210800000000000000
+      internalID: 1321191417465985531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_23
+      name: Furnitures_48x48_23
       rect:
         serializedVersion: 2
-        x: 336
-        y: 240
+        x: 624
+        y: 992
         width: 48
         height: 48
       alignment: 0
@@ -713,18 +584,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 201c0043ca6b5fa70800000000000000
-      internalID: 8860188692644413698
+      spriteID: 27e39bb2fae6937d0800000000000000
+      internalID: -2938195583250645390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_25
+      name: Furnitures_48x48_24
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
+        x: 672
+        y: 992
         width: 48
         height: 48
       alignment: 0
@@ -734,18 +605,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eace9ac2870129b90800000000000000
-      internalID: -7236703542899512146
+      spriteID: ab330da546a07dc80800000000000000
+      internalID: -8298152362270248006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_26
+      name: Furnitures_48x48_25
       rect:
         serializedVersion: 2
-        x: 144
-        y: 192
+        x: 720
+        y: 992
         width: 48
         height: 48
       alignment: 0
@@ -755,18 +626,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca1405b193a917c90800000000000000
-      internalID: -7173783161362431572
+      spriteID: abe6484c3922c9fa0800000000000000
+      internalID: -5792717002652750150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_27
+      name: Furnitures_48x48_26
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
+        x: 869
+        y: 992
         width: 48
         height: 48
       alignment: 0
@@ -776,18 +647,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7871fc6934a56bb0800000000000000
-      internalID: -4943364449421395841
+      spriteID: fb136e0789c176890800000000000000
+      internalID: -7464966416288566849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_31
+      name: Furnitures_48x48_29
       rect:
         serializedVersion: 2
-        x: 144
-        y: 144
+        x: 1056
+        y: 992
         width: 48
         height: 48
       alignment: 0
@@ -797,18 +668,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5e63eed8b9bc8da0800000000000000
-      internalID: -5941169604743958949
+      spriteID: 1c489a74584067300800000000000000
+      internalID: 249391799845094593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_32
+      name: Furnitures_48x48_30
       rect:
         serializedVersion: 2
-        x: 192
-        y: 144
+        x: 1104
+        y: 992
         width: 48
         height: 48
       alignment: 0
@@ -818,18 +689,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e2e9d927f275f4e0800000000000000
-      internalID: -1948524857883237664
+      spriteID: 4164c60f300407d80800000000000000
+      internalID: -8255027731307411948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_37
+      name: Furnitures_48x48_31
       rect:
         serializedVersion: 2
-        x: 48
-        y: 18
+        x: 581
+        y: 944
         width: 48
         height: 48
       alignment: 0
@@ -839,18 +710,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53079ee9adf130640800000000000000
-      internalID: 5044911031414517813
+      spriteID: 3c80cea996f22f9e0800000000000000
+      internalID: -1589155587891132221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_39
+      name: Furnitures_48x48_32
       rect:
         serializedVersion: 2
-        x: 192
-        y: 18
+        x: 629
+        y: 944
         width: 48
         height: 48
       alignment: 0
@@ -860,18 +731,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c897331abcc25400800000000000000
-      internalID: 311536423800379588
+      spriteID: 0cd146b6ec403ff10800000000000000
+      internalID: 2302189119127952832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_42
+      name: Furnitures_48x48_33
       rect:
         serializedVersion: 2
-        x: 384
-        y: 18
+        x: 677
+        y: 944
         width: 48
         height: 48
       alignment: 0
@@ -881,18 +752,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12061c99c803c1910800000000000000
-      internalID: 1809374530729238561
+      spriteID: e2a06d813d9c66a70800000000000000
+      internalID: 8819958828743658030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_24
+      name: Furnitures_48x48_34
       rect:
         serializedVersion: 2
-        x: 26
-        y: 96
+        x: 725
+        y: 944
         width: 48
         height: 48
       alignment: 0
@@ -902,18 +773,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c7781ec066904ec0800000000000000
-      internalID: -3584699960868177981
+      spriteID: 0f5ea8abc48554190800000000000000
+      internalID: -7978874078246541840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ParedesBano_48x48_28
+      name: Furnitures_48x48_35
       rect:
         serializedVersion: 2
-        x: 406
-        y: 96
+        x: 773
+        y: 944
         width: 48
         height: 48
       alignment: 0
@@ -923,8 +794,260 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d85d36ced34afb40800000000000000
-      internalID: 5474762921109969111
+      spriteID: f6239dcd8a1cdf0e0800000000000000
+      internalID: -2234416909102009745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Furnitures_48x48_36
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 944
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed68324bca8507b0800000000000000
+      internalID: -5258644384291197468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Furnitures_48x48_37
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 944
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa54f1e54e7e9ba0800000000000000
+      internalID: -6080283608294860115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Furnitures_48x48_38
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 944
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7250e8ac30afc7b80800000000000000
+      internalID: -8395560711135296217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Furnitures_48x48_39
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 944
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2da8358372d8e8b0800000000000000
+      internalID: -5122613182535783126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Furnitures_48x48_45
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 896
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb04b4c5753e4de0800000000000000
+      internalID: -1347080458609620032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Furnitures_48x48_46
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 896
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea200b66d765b670800000000000000
+      internalID: 8553857237875960551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Furnitures_48x48_47
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 896
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0857abaed6af00420800000000000000
+      internalID: 2594348735361873280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Furnitures_48x48_48
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 896
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb8a2b8e8d277680800000000000000
+      internalID: -8757480860155212875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Furnitures_48x48_49
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 896
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ed3728f33d366c0800000000000000
+      internalID: -4151242161780433323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Furnitures_48x48_50
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 896
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd6181d462f66ab0800000000000000
+      internalID: -5015054620204896848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Furnitures_48x48_52
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 896
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b975342d667825530800000000000000
+      internalID: 3842282307784497051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Furnitures_48x48_53
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 896
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d08cccd4417e03d0800000000000000
+      internalID: -3238526541456703276
       vertices: []
       indices: 
       edges: []
