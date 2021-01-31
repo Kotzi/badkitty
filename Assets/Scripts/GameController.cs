@@ -71,22 +71,26 @@ public class GameController : MonoBehaviour
 
     void StartNight()
     {
+        var startingColor = Color.black;
+        startingColor.a = 0.3f;
+        MainOverlay.color = startingColor;
         MainAudioSource.Stop();
         YouWon.gameObject.SetActive(false);
         Player.RestartPlayer();
-        Cat.WakeUp();
-        MainOverlay.DOColor(Color.black, 1f)
-                .OnComplete(() => {
-                    var color = Color.black;
-                    color.a = 0f;
-                    MainOverlay.DOColor(color, 1f)
-                                .OnComplete(() => {
-                                    MainAudioSource.Play();
-                                    currentTime = startingTime;
-                                    ToggleTimerActivate();
-                                    Player.canMove = true;
-                                });
-                });
+        var fadeOutDuration = 5f;
+        Cat.WakeUp(fadeOutDuration);
+        MainOverlay.DOColor(Color.black, fadeOutDuration)
+            .OnComplete(() => {
+                var color = Color.black;
+                color.a = 0f;
+                MainOverlay.DOColor(color, 1f)
+                            .OnComplete(() => {
+                                MainAudioSource.Play();
+                                currentTime = startingTime;
+                                ToggleTimerActivate();
+                                Player.canMove = true;
+                            });
+        });
     }
 
     void ToggleTimerActivate() {
