@@ -5,6 +5,7 @@ using DG.Tweening;
 public class GameController : MonoBehaviour
 {
     const float startingTime = 60f;
+    public SpriteRenderer PlayerInBed;
     public YouWonController YouWon;
     public GameOverController GameOver;
     public PlayerController Player;
@@ -77,6 +78,8 @@ public class GameController : MonoBehaviour
 
     void StartNight()
     {
+        Player.PlayerSpriteRenderer.enabled = false;
+        PlayerInBed.enabled = true;
         Player.transform.position = originalPlayerPosition;
         Cat.transform.position = originalCatPosition;
 
@@ -92,6 +95,8 @@ public class GameController : MonoBehaviour
             .OnComplete(() => {
                 var color = Color.black;
                 color.a = 0f;
+                PlayerInBed.enabled = false;
+                Player.PlayerSpriteRenderer.enabled = true;
                 MainOverlay.DOColor(color, 1f)
                             .OnComplete(() => {
                                 MainAudioSource.Play();

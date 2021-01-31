@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public Sprite CarKeysSprite;
     public Sprite WalletSprite;
     public SpriteRenderer ItemSpriteRenderer;
+    public SpriteRenderer PlayerSpriteRenderer;
     public CameraController Camera;
     public GameController GameController;
     private float dx, dy;

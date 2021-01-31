@@ -139,6 +139,7 @@ MonoBehaviour:
   CarKeysSprite: {fileID: 21300000, guid: d5541357dd9564cdca9b76472c07d76c, type: 3}
   WalletSprite: {fileID: 21300000, guid: 6f26ec72a2c4041a38723971b3506c70, type: 3}
   ItemSpriteRenderer: {fileID: 8874750396991090961}
+  PlayerSpriteRenderer: {fileID: 796920770756890851}
   Camera: {fileID: 0}
   GameController: {fileID: 0}
   grabbed_items: 00000000
