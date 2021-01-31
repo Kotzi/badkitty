@@ -89,6 +89,7 @@ public class PlayerController : MonoBehaviour
         GameController.setListItems(grabbed_items);
     }
 
+    private string currentTrigger = "";
     void FixedUpdate()
     {
         if (isMoving)
@@ -100,19 +101,35 @@ public class PlayerController : MonoBehaviour
 
             if (dx > 0) 
             {
-                Animator.SetTrigger("right");
+                if(currentTrigger != "right")
+                {
+                    Animator.SetTrigger("right");
+                    currentTrigger = "right";
+                }
             } 
             else if (dx < 0) 
             {
-                Animator.SetTrigger("left");
+                if(currentTrigger != "left")
+                {
+                    Animator.SetTrigger("left");
+                    currentTrigger = "left";
+                }
             } 
             else if (dy > 0) 
             {
-                Animator.SetTrigger("up");
+                if(currentTrigger != "up")
+                {
+                    Animator.SetTrigger("up");
+                    currentTrigger = "up";
+                }
             } 
             else if (dy < 0) 
             {
-                Animator.SetTrigger("down");
+                if(currentTrigger != "down")
+                {
+                    Animator.SetTrigger("down");
+                    currentTrigger = "down";
+                }
             }
 
             float dt = Time.fixedDeltaTime;
