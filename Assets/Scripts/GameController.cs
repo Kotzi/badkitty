@@ -4,7 +4,7 @@ using DG.Tweening;
 
 public class GameController : MonoBehaviour
 {
-    const float startingTime = 60f;
+    const float startingTime = 70f;
     public AudioSource DoorAudioSource;
     public SpriteRenderer PlayerInBed;
     public YouWonController YouWon;
