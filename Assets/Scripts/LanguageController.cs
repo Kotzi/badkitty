@@ -156,9 +156,9 @@ class LanguageController : MonoBehaviour {
     public string getInitialInstruction(){
         switch(CurrentLanguage){
 
-         case Language.EN: return "Find the items that Bigotitos has hidden from you and take them by pressing the (E) key ...";
-         case Language.ES: return "Encuentra los articulos que te ha escondido Bigotitos y cogelos presionando la tecla (E) ...";
-         case Language.CAT: return "Troba els articles que t'ha amagat Bigotitos i agafa'ls pressionant la tecla (E)...";
+         case Language.EN: return "Find the items that Bigotitos has hidden from you and take them by pressing the (E) key";
+         case Language.ES: return "Encuentra los articulos que te ha escondido Bigotitos y cogelos presionando la tecla (E)";
+         case Language.CAT: return "Troba els articles que t'ha amagat Bigotitos i agafa'ls pressionant la tecla (E)";
         }
         return "";
     }
@@ -167,9 +167,9 @@ class LanguageController : MonoBehaviour {
     public string getMiddleInstruction(){
          switch(CurrentLanguage){
 
-         case Language.EN: return "Take  look at the rest of the rooms...";
-         case Language.ES: return "Mira bien en el resto de las habitaciones...";
-         case Language.CAT: return "Mira bé a la resta de les habitacions...";
+         case Language.EN: return "Take a look at the rest of the rooms";
+         case Language.ES: return "Mira bien en el resto de las habitaciones";
+         case Language.CAT: return "Mira bé a la resta de les habitacions";
         }
         return "";
     }
@@ -185,14 +185,12 @@ class LanguageController : MonoBehaviour {
         return "";
     }
     
-
-
     public string getIntroText(){
         switch(CurrentLanguage){
 
-         case Language.EN: return "Bigotitos is a very naughty kitten, he likes to hide items so that his owner cannot leave the house...Help her to find the items!";
+         case Language.EN: return "Bigotitos is a very naughty kitten, he likes to hide items so that his owner cannot leave the house... Help her to find the items!";
          case Language.ES: return "Bigotitos es un gatito muy travieso y le gusta esconder articulos para que su dueña no pueda salir de casa... Ayudala a encontrar los articulos";
-         case Language.CAT: return "Bigotitos és un gat molt entremaliat , li agrada amagar articles  perque  la seva propietaria no pugui sortir de casa";
+         case Language.CAT: return "Bigotitos és un gat molt entremaliat, li agrada amagar articles  perque  la seva propietaria no pugui sortir de casa";
         }
         return "";
     }
