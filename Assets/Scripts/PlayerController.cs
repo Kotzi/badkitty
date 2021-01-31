@@ -25,7 +25,6 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        Camera.CinemachineVirtualCamera.m_Lens.OrthographicSize = MinOrthographicSize;
         RestartPlayer();
     }
 
@@ -69,6 +68,7 @@ public class PlayerController : MonoBehaviour
 
     public void RestartPlayer()
     {
+        Camera.CinemachineVirtualCamera.m_Lens.OrthographicSize = MinOrthographicSize;
         canMove = false;
         for (int i = 0; i < grabbed_items.Length; i++)
         {

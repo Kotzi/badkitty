@@ -22,8 +22,14 @@ public class GameController : MonoBehaviour
     public Image MainOverlay;
     public AudioSource MainAudioSource;
 
+    private Vector3 originalCatPosition = Vector3.zero;
+    private Vector3 originalPlayerPosition = Vector3.zero;
+
     void Start()
     {
+        originalCatPosition = Cat.transform.position;
+        originalPlayerPosition = Player.transform.position;
+
         YouWon.NextDayButtonAction = () => {
             ItemPlacer.AddItems();
             currentDay += 1;
@@ -71,6 +77,9 @@ public class GameController : MonoBehaviour
 
     void StartNight()
     {
+        Player.transform.position = originalPlayerPosition;
+        Cat.transform.position = originalCatPosition;
+
         var startingColor = Color.black;
         startingColor.a = 0.3f;
         MainOverlay.color = startingColor;

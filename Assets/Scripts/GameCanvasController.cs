@@ -4,11 +4,23 @@ using DG.Tweening;
 
 public class GameCanvasController : MonoBehaviour
 {
-       [SerializeField] Text countdownText;
-       [SerializeField] Text FaceMaskText;
-       [SerializeField] Text KeysText;
-       [SerializeField] Text CarKeysText;
-       [SerializeField] Text WalletText;
+        [SerializeField] Text countdownText;
+        [SerializeField] Text FaceMaskText;
+        [SerializeField] Image FaceMaskImage;
+        [SerializeField] Sprite FaceMaskSpriteOn;
+        [SerializeField] Sprite FaceMaskSpriteOff;
+        [SerializeField] Text KeysText;
+        [SerializeField] Image KeysImage;
+        [SerializeField] Sprite KeysSpriteOn;
+        [SerializeField] Sprite KeysSpriteOff;
+        [SerializeField] Text CarKeysText;
+        [SerializeField] Image CarKeysImage;
+        [SerializeField] Sprite CarKeysSpriteOn;
+        [SerializeField] Sprite CarKeysSpriteOff;
+        [SerializeField] Text WalletText;
+        [SerializeField] Image WalletImage;
+        [SerializeField] Sprite WalletSpriteOn;
+        [SerializeField] Sprite WalletSpriteOff;
        
        void Start(){
            FaceMaskText.text = LanguageController.Shared.getFaceMaskText();
@@ -18,7 +30,7 @@ public class GameCanvasController : MonoBehaviour
        }
 
        public void setCountdownText(string s){
-              countdownText.text= s;
+            countdownText.text= s;
        }
 
     private bool isScaling = false;
@@ -27,55 +39,96 @@ public class GameCanvasController : MonoBehaviour
         if (!isScaling)
         {
             Text textToScale = FaceMaskText;
+            Image imageToScale = FaceMaskImage;
             switch(item){
                 case ItemType.FACE_MASK:
                     textToScale = FaceMaskText;
+                    imageToScale = FaceMaskImage;
                     break;
                 case ItemType.CAR_KEY:
                     textToScale = CarKeysText;
+                    imageToScale = CarKeysImage;
                     break;
                 case ItemType.HOME_KEYS:
                     textToScale = KeysText;
+                    imageToScale = KeysImage;
                     break;
                 case ItemType.WALLET:
                     textToScale = WalletText;
+                    imageToScale = WalletImage;
                     break;
             }
 
             isScaling = true;
-            var originalScale = textToScale.transform.localScale;
-            var p = (1/Mathf.Max(distance - 1.15f, 1.1f)) * 0.5f;
-            var maxScale = originalScale * Mathf.Exp(p);
-            textToScale.transform.DOScale(maxScale, 0.25f).OnComplete(() => { 
-                textToScale.transform.DOScale(originalScale, 0.25f).OnComplete(() => { 
-                    isScaling = false;
+            var textOriginalScale = textToScale.transform.localScale;
+            var imageOriginalScale = textToScale.transform.localScale;
+            var p = Mathf.Exp(((1/Mathf.Max(distance - 1.15f, 1.1f)) * 0.5f));
+            var maxTextScale = textOriginalScale * p;
+            var maxImageScale = imageOriginalScale * p;
+            DOTween.Sequence()
+                .Join(textToScale.transform.DOScale(maxTextScale, 0.25f))
+                .Join(imageToScale.transform.DOScale(maxImageScale, 0.25f))
+                .OnComplete(() => {
+                    DOTween.Sequence()
+                            .Join(textToScale.transform.DOScale(textOriginalScale, 0.25f))
+                            .Join(imageToScale.transform.DOScale(imageOriginalScale, 0.25f))
+                            .OnComplete(() => {
+                                isScaling = false;
+                            });
                 });
-            });
         }
     }
 
        public void setListItems(bool[] items){
-            SetTextColor(FaceMaskText, items[(int)ItemType.FACE_MASK] ? Color.green : Color.red);
-            SetTextColor(KeysText, items[(int)ItemType.HOME_KEYS] ? Color.green : Color.red);
-            SetTextColor(CarKeysText, items[(int)ItemType.CAR_KEY] ? Color.green : Color.red);
-            SetTextColor(WalletText, items[(int)ItemType.WALLET] ? Color.green : Color.red);
+            var colorOn = Color.green;
+            var colorOff = Color.gray;
+            SetItem(FaceMaskText, 
+                    items[(int)ItemType.FACE_MASK] ? colorOn : colorOff, 
+                    FaceMaskImage, 
+                    items[(int)ItemType.FACE_MASK] ? FaceMaskSpriteOn : FaceMaskSpriteOff);
+            SetItem(KeysText, 
+                    items[(int)ItemType.HOME_KEYS] ? colorOn : colorOff, 
+                    KeysImage, 
+                    items[(int)ItemType.HOME_KEYS] ? KeysSpriteOn : KeysSpriteOff);
+            SetItem(CarKeysText, 
+                    items[(int)ItemType.CAR_KEY] ? colorOn : colorOff, 
+                    CarKeysImage, 
+                    items[(int)ItemType.CAR_KEY] ? CarKeysSpriteOn : CarKeysSpriteOff);
+            SetItem(WalletText, 
+                    items[(int)ItemType.WALLET] ? colorOn : colorOff, 
+                    WalletImage, 
+                    items[(int)ItemType.WALLET] ? WalletSpriteOn : WalletSpriteOff);
        }
 
-    private void SetTextColor(Text text, Color color)
+    private void SetItem(Text text, Color color, Image image, Sprite sprite)
     {
         var oldColor = text.color;
         text.color = color;
+        image.sprite = sprite;
         if (oldColor != color)
         {
             var originalScale = Vector3.one;
             var scaled = Vector3.one * 1.2f;
-            text.transform.DOScale(scaled, 0.25f).OnComplete(() => {
-                text.transform.DOScale(originalScale, 0.15f).OnComplete(() => {
-                    text.transform.DOScale(scaled, 0.25f).OnComplete(() => {
-                        text.transform.DOScale(originalScale, 0.15f);
-                    });
+            var scaledTime = 0.25f;
+            var originalTime = 0.15f;
+            DOTween.Sequence()
+                .Join(text.transform.DOScale(scaled, scaledTime))
+                .Join(image.transform.DOScale(scaled, scaledTime))
+                .OnComplete(() => {
+                    DOTween.Sequence()
+                        .Join(text.transform.DOScale(originalScale, originalTime))
+                        .Join(image.transform.DOScale(originalScale, originalTime))
+                        .OnComplete(() => {
+                            DOTween.Sequence()
+                                .Join(text.transform.DOScale(scaled, scaledTime))
+                                .Join(image.transform.DOScale(scaled, scaledTime))
+                                .OnComplete(() => {
+                                    DOTween.Sequence()
+                                        .Join(text.transform.DOScale(originalScale, originalTime))
+                                        .Join(image.transform.DOScale(originalScale, originalTime));
+                                });
+                        });
                 });
-            });
         }
     }
 }
