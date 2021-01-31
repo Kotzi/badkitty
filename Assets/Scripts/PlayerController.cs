@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource ItemPickupAudioSource;
     public AudioSource WalkingAudioSource;
 
+    private Animator Animator;
     private float dx, dy;
     private bool isMoving = false;
     private bool horizontal_priority = true;
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        Animator = GetComponent<Animator>();
         RestartPlayer();
         ItemSpriteRenderer.enabled = false;
     }
@@ -95,6 +97,24 @@ public class PlayerController : MonoBehaviour
             {
                 WalkingAudioSource.Play();
             }
+
+            if (dx > 0) 
+            {
+                Animator.SetTrigger("right");
+            } 
+            else if (dx < 0) 
+            {
+                Animator.SetTrigger("left");
+            } 
+            else if (dy > 0) 
+            {
+                Animator.SetTrigger("up");
+            } 
+            else if (dy < 0) 
+            {
+                Animator.SetTrigger("down");
+            }
+
             float dt = Time.fixedDeltaTime;
             gameObject.transform.position += new Vector3(dx, dy, 0f) * dt * Velocity;
             isMoving = false;
@@ -105,7 +125,9 @@ public class PlayerController : MonoBehaviour
             if(WalkingAudioSource.isPlaying) {
                 WalkingAudioSource.Stop();
             }
-        }
+
+            Animator.SetTrigger("still");
+        } 
     }
 
     public void GrabItem(ItemType item_type)

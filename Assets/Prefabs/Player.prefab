@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 183751509479926398}
   - component: {fileID: 7451334238124914314}
   - component: {fileID: 5786693902802990135}
+  - component: {fileID: 3465282209793229450}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -76,12 +77,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4fd65b895a6644c569b16628a4f9a2c3, type: 3}
+  m_Sprite: {fileID: 1768599190028779529, guid: 317152febb8df49cf92d93847cc9c296,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.48, y: 0.96}
+  m_Size: {x: 0.5, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -152,6 +154,25 @@ MonoBehaviour:
   CarKey: 0
   Wallet: 0
   canMove: 1
+--- !u!95 &3465282209793229450
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722754632737851801}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5d8f8ee5f0fed4296b41f6b10254c184, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3435693278367866785
 GameObject:
   m_ObjectHideFlags: 0
