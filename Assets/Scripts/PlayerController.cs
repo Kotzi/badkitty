@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,6 +11,11 @@ public class PlayerController : MonoBehaviour
     const float StillThreshold = 1f;
     private float StillTimer = 0f;
 
+    public Sprite FaceMaskSprite;
+    public Sprite KeysSprite;
+    public Sprite CarKeysSprite;
+    public Sprite WalletSprite;
+    public SpriteRenderer ItemSpriteRenderer;
     public CameraController Camera;
     public GameController GameController;
     private float dx, dy;
@@ -26,6 +31,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         RestartPlayer();
+        ItemSpriteRenderer.enabled = false;
     }
 
     void Update()
@@ -91,24 +97,50 @@ public class PlayerController : MonoBehaviour
     public void GrabItem(ItemType item_type)
     {
         grabbed_items[(int)item_type] = true;
+        Sprite itemSprite = FaceMaskSprite;
         switch ((int)item_type)
         {
             case (int)ItemType.FACE_MASK:
                 FaceMask = true;
+                itemSprite = FaceMaskSprite;
                 break;
             case (int)ItemType.HOME_KEYS:
                 HomeKeys = true;
+                itemSprite = KeysSprite;
                 break;
             case (int)ItemType.CAR_KEY:
                 CarKey = true;
+                itemSprite = CarKeysSprite;
                 break;
             case (int)ItemType.WALLET:
                 Wallet = true;
+                itemSprite = WalletSprite;
                 break;
             default:
                 Debug.Log("Error: Unrecognized item type");
                 break;
         }
+
+        ItemSpriteRenderer.sprite = itemSprite;
+        ItemSpriteRenderer.enabled = true;
+        var originalSpriteRendererScale = ItemSpriteRenderer.transform.localScale;
+        var maxSpriteRendererScale = originalSpriteRendererScale * 3f;
+        var originalPosition = ItemSpriteRenderer.transform.localPosition;
+        var originalColor = ItemSpriteRenderer.color;
+        var newColor = originalColor;
+        newColor.a = 0.2f;
+        var duration = 0.8f;
+        DOTween.Sequence()
+                .Join(ItemSpriteRenderer.transform.DOScale(maxSpriteRendererScale, duration))
+                .Join(ItemSpriteRenderer.transform.DOLocalMoveY(originalPosition.y + 1.5f, duration))
+                .Join(ItemSpriteRenderer.DOColor(newColor, duration))
+                .OnComplete(() => {
+                    ItemSpriteRenderer.enabled = false;
+                    ItemSpriteRenderer.transform.localScale = originalSpriteRendererScale;
+                    ItemSpriteRenderer.transform.localPosition = originalPosition;
+                    ItemSpriteRenderer.color = originalColor;
+                });
+
         GameController.setListItems(grabbed_items);
     }
 
