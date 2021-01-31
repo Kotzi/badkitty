@@ -64,7 +64,7 @@ public class GameController : MonoBehaviour
             {
                 currentTime -= 1 * Time.deltaTime;
              
-                gameCanvasController.setCountdownText(currentTime.ToString("0"));
+                gameCanvasController.setCountdownText(currentTime.ToString("0"), currentDay.ToString("0"));
                 if(currentTime <= 0){
                     isTimerActive = false;
                     currentTime = 0;
@@ -150,9 +150,10 @@ public class GameController : MonoBehaviour
 
     public void DoorOpened()
     {
+        MainAudioSource.Stop();
         DoorAudioSource.Play();
         ToggleTimerActivate();
-        YouWon.Show(currentDay.ToString("0"));
         YouWon.gameObject.SetActive(true);
+        YouWon.Show(currentDay.ToString("0"));
     }
 }

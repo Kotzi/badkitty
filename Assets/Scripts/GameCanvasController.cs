@@ -5,6 +5,7 @@ using DG.Tweening;
 public class GameCanvasController : MonoBehaviour
 {
         [SerializeField] Text countdownText;
+        [SerializeField] Text dayText;
         [SerializeField] Text FaceMaskText;
         [SerializeField] Image FaceMaskImage;
         [SerializeField] Sprite FaceMaskSpriteOn;
@@ -31,8 +32,9 @@ public class GameCanvasController : MonoBehaviour
           
        }
 
-       public void setCountdownText(string s){
+       public void setCountdownText(string s, string day){
             countdownText.text= s;
+            dayText.text = LanguageController.Shared.getDayText(day);
        }
 
     private bool isScaling = false;

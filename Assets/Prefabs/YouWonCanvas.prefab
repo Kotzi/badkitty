@@ -158,6 +158,7 @@ MonoBehaviour:
   YouWonLabel: {fileID: 3240222275840970367}
   NextDayLabel: {fileID: 6814519229210436296}
   DayLabel: {fileID: 1769532641015250572}
+  MusicAudioSource: {fileID: 4176121059327439310}
   PopAudioSource: {fileID: 603176095880735148}
 --- !u!1 &1182184483680253535
 GameObject:
