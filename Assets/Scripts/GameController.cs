@@ -55,6 +55,7 @@ public class GameController : MonoBehaviour
             if (isTimerActive)
             {
                 currentTime -= 1 * Time.deltaTime;
+             
                 gameCanvasController.setCountdownText(currentTime.ToString("0"));
                 if(currentTime <= 0){
                     isTimerActive = false;
@@ -64,6 +65,18 @@ public class GameController : MonoBehaviour
                     GameOver.gameObject.SetActive(true);
                     GameOver.PlaySong();
                     Player.canMove = false;
+                }
+                else if(currentTime <= 14  ){
+                   
+                    gameCanvasController.setInstruction("LAST");
+                }
+                else if(currentTime <= 30 && currentTime > 14){
+                 
+                    gameCanvasController.setInstruction("MIDDLE");
+                }
+                else if(currentTime <= 100 && currentTime > 30){
+                   
+                     gameCanvasController.setInstruction("INITIAL");
                 }
             }
         }

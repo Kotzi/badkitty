@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class MainMenuController : MonoBehaviour
 {
     public Text StartButtonText;
+    public Text IntroText;
     public SoundButton SoundButton;
     private LanguageController LanguageController;
     private SceneManagerController SceneManagerController;
@@ -14,6 +15,7 @@ public class MainMenuController : MonoBehaviour
         SceneManagerController = Object.FindObjectOfType<SceneManagerController>();
         SceneManagerController.CurrentSceneIndex = 1;
         LanguageController = LanguageController.Shared;
+        IntroText.text= LanguageController.Shared.getIntroText();
         ReloadTexts();
     }
 
