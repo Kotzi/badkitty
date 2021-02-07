@@ -189,8 +189,8 @@ class LanguageController : MonoBehaviour {
         switch(CurrentLanguage){
 
          case Language.EN: return "Bigotitos is a very naughty kitten, he likes to hide items so that his owner cannot leave the house... Help her to find the items!";
-         case Language.ES: return "Bigotitos es un gatito muy travieso y le gusta esconder articulos para que su dueña no pueda salir de casa... Ayudala a encontrar los articulos";
-         case Language.CAT: return "Bigotitos és un gat molt entremaliat, li agrada amagar articles  perque  la seva propietaria no pugui sortir de casa";
+         case Language.ES: return "Bigotitos es un gatito muy travieso y le gusta esconder articulos para que su dueña no pueda salir de casa... Ayúdala a encontrar los articulos.";
+         case Language.CAT: return "Bigotitos és un gat molt entremaliat, li agrada amagar articles  perque  la seva propietaria no pugui sortir de casa.";
         }
         return "";
     }

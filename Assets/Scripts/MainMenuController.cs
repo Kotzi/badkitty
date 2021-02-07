@@ -58,5 +58,6 @@ public class MainMenuController : MonoBehaviour
     private void ReloadTexts()
     {
         StartButtonText.text = LanguageController.getStartButtonText();
+        IntroText.text= LanguageController.Shared.getIntroText();
     }
 }
