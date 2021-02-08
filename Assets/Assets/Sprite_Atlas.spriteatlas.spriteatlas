@@ -71,19 +71,39 @@ SpriteAtlas:
   - {fileID: 7267741855315645710, guid: d578c6100537bc24d9cc00712715eef5, type: 3}
   - {fileID: -6895159605021060365, guid: d578c6100537bc24d9cc00712715eef5, type: 3}
   - {fileID: 7154639218270929020, guid: d578c6100537bc24d9cc00712715eef5, type: 3}
+  - {fileID: 2310699926640566468, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 8492012426855172308, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 239088545245511134, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 2569402898391022702, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: -8106957203607107380, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 1446506231130498722, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -4650623768942134529, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: -889945396818114424, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: 403948207972911108, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 264403751275482252, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 6665105785098658309, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 8019658873402364121, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: -5937051034058319989, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -8757480860155212875, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 334915109455519463, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 7099338786510073372, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -4151242161780433323, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -2214740052885458703, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 3384627867812445394, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 2049753425531732318, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: 8553857237875960551, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: 7258580703622518117, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 8148817472058918454, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: -4649291752349362142, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: 2594348735361873280, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -3466289480598903455, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 2443744119356390672, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -494201512956151889, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -3223914714486672517, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: -5006367260972281753, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -1347080458609620032, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -5454861533979966277, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: -1733032467900118869, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: 1362474392603560584, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: 8015458080351731365, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: 2903112481292226898, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
@@ -101,18 +121,26 @@ SpriteAtlas:
   - {fileID: 886392092572450732, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: 5259389114208729143, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: 7225110225150495066, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: -1136915795505459732, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -5015054620204896848, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -3238526541456703276, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: -613782918084318780, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: 3842282307784497051, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -8298152362270248006, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 5458362759341611961, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -5792717002652750150, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 7346099668949102667, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -7464966416288566849, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 1489447088502857012, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -7551691082464296946, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -6080283608294860115, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: -4062642095599728190, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -3092542312643227715, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -5258644384291197468, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 2960621099132402609, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: 6169600103260158332, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -2234416909102009745, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
+  - {fileID: 6138321425912212579, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: 1321191417465985531, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -7978874078246541840, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
   - {fileID: -2938195583250645390, guid: eed4e1182c317eb45a7fb23db3db0d91, type: 3}
@@ -227,19 +255,39 @@ SpriteAtlas:
   - ParedesBano_48x48_17
   - ParedesBano_48x48_18
   - ParedesBano_48x48_19
+  - Furnitures_48x48_68
+  - Furnitures_48x48_69
+  - Furnitures_48x48_79
+  - Furnitures_48x48_78
+  - Furnitures_48x48_60
+  - Furnitures_48x48_61
   - Furnitures_48x48_19
+  - Furnitures_48x48_62
   - Furnitures_48x48_18
+  - Furnitures_48x48_63
+  - Furnitures_48x48_73
+  - Furnitures_48x48_64
+  - Furnitures_48x48_72
   - Furnitures_48x48_48
+  - Furnitures_48x48_65
+  - Furnitures_48x48_71
   - Furnitures_48x48_49
   - Furnitures_48x48_15
+  - Furnitures_48x48_66
+  - Furnitures_48x48_70
   - Furnitures_48x48_46
   - Furnitures_48x48_14
+  - Furnitures_48x48_67
+  - Furnitures_48x48_77
   - Furnitures_48x48_47
   - Furnitures_48x48_17
+  - Furnitures_48x48_76
   - Furnitures_48x48_44
   - Furnitures_48x48_16
+  - Furnitures_48x48_75
   - Furnitures_48x48_45
   - Furnitures_48x48_11
+  - Furnitures_48x48_74
   - Furnitures_48x48_42
   - Furnitures_48x48_10
   - Furnitures_48x48_43
@@ -257,18 +305,26 @@ SpriteAtlas:
   - Furnitures_48x48_3
   - Furnitures_48x48_0
   - Furnitures_48x48_1
+  - Furnitures_48x48_51
   - Furnitures_48x48_50
   - Furnitures_48x48_53
+  - Furnitures_48x48_80
   - Furnitures_48x48_52
   - Furnitures_48x48_24
+  - Furnitures_48x48_55
   - Furnitures_48x48_25
+  - Furnitures_48x48_54
   - Furnitures_48x48_26
+  - Furnitures_48x48_57
   - Furnitures_48x48_27
   - Furnitures_48x48_37
+  - Furnitures_48x48_56
   - Furnitures_48x48_20
   - Furnitures_48x48_36
+  - Furnitures_48x48_59
   - Furnitures_48x48_21
   - Furnitures_48x48_35
+  - Furnitures_48x48_58
   - Furnitures_48x48_22
   - Furnitures_48x48_34
   - Furnitures_48x48_23

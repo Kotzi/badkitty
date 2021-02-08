@@ -1755,7 +1755,7 @@ TextureImporter:
       name: Furnitures_48x48_74
       rect:
         serializedVersion: 2
-        x: 446
+        x: 444
         y: 1184
         width: 48
         height: 48
@@ -1776,7 +1776,7 @@ TextureImporter:
       name: Furnitures_48x48_75
       rect:
         serializedVersion: 2
-        x: 494
+        x: 496
         y: 1184
         width: 48
         height: 48

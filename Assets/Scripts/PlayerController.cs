@@ -90,6 +90,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private string currentTrigger = "";
+    private string orientation = "down";
     void FixedUpdate()
     {
         if (isMoving)
@@ -99,52 +100,29 @@ public class PlayerController : MonoBehaviour
                 WalkingAudioSource.Play();
             }
 
-            if (dx > 0) 
-            {
-                if(currentTrigger != "right")
-                {
-                    Animator.SetTrigger("right");
-                    currentTrigger = "right";
-                }
-            } 
-            else if (dx < 0) 
-            {
-                if(currentTrigger != "left")
-                {
-                    Animator.SetTrigger("left");
-                    currentTrigger = "left";
-                }
-            } 
-            else if (dy > 0) 
-            {
-                if(currentTrigger != "up")
-                {
-                    Animator.SetTrigger("up");
-                    currentTrigger = "up";
-                }
-            } 
-            else if (dy < 0) 
-            {
-                if(currentTrigger != "down")
-                {
-                    Animator.SetTrigger("down");
-                    currentTrigger = "down";
-                }
-            }
+            if (dx < 0)
+                updateAnimation("left");
+            else if (dx > 0) 
+                updateAnimation("right");
+            else if (dy < 0)
+                updateAnimation("down");
+            else if (dy > 0)
+                updateAnimation("up");
 
             float dt = Time.fixedDeltaTime;
             gameObject.transform.position += new Vector3(dx, dy, 0f) * dt * Velocity;
             isMoving = false;
             StillTimer = 0f;
         } 
-        else 
+        else
         {
-            if(WalkingAudioSource.isPlaying) {
+            if (WalkingAudioSource.isPlaying) {
                 WalkingAudioSource.Stop();
             }
 
-            Animator.SetTrigger("still");
-        } 
+            Animator.SetTrigger("still_" + orientation);
+            currentTrigger = "still";
+        }
     }
 
     public void GrabItem(ItemType item_type)
@@ -204,4 +182,14 @@ public class PlayerController : MonoBehaviour
         GameController.playerIsCloseTo(item, distance);
     }
     private void setDisplacement(float new_dx, float new_dy) { dx = new_dx; dy = new_dy; }
+
+    void updateAnimation(string trigger)
+    {
+        if (currentTrigger != trigger)
+        {
+            Animator.SetTrigger(trigger);
+            currentTrigger = trigger;
+            orientation = trigger;
+        }
+    }
 }

@@ -48,7 +48,7 @@ class LanguageController : MonoBehaviour {
         {
             case Language.EN: return "Pause";
             case Language.ES: return "Pausa";
-            case Language.CAT: return "CAT";
+            case Language.CAT: return "Pausa";
         }
 
         return "";
@@ -70,7 +70,7 @@ class LanguageController : MonoBehaviour {
         {
             case Language.EN: return "You won, you got out of your home!";
             case Language.ES: return "Has ganado, lograste salir de tu casa!";
-            case Language.CAT: return "";
+            case Language.CAT: return "Has guanyat, has aconseguit sortir de casa teva!";
         }
 
         return "";
@@ -92,7 +92,7 @@ class LanguageController : MonoBehaviour {
         {
             case Language.EN: return "Keys";
             case Language.ES: return "Llaves";
-            case Language.CAT: return "CAT";
+            case Language.CAT: return "Claus";
         }
 
         return "";
@@ -103,7 +103,7 @@ class LanguageController : MonoBehaviour {
         {
             case Language.EN: return "Car keys";
             case Language.ES: return "Llaves del coche";
-            case Language.CAT: return "CAT";
+            case Language.CAT: return "Clau del cotxe";
         }
 
         return "";
@@ -114,7 +114,7 @@ class LanguageController : MonoBehaviour {
         {
             case Language.EN: return "Wallet";
             case Language.ES: return "Cartera";
-            case Language.CAT: return "CAT";
+            case Language.CAT: return "Bitlletera";
         }
 
         return "";
@@ -125,7 +125,7 @@ class LanguageController : MonoBehaviour {
         {
             case Language.EN: return "Retry";
             case Language.ES: return "Reintentar";
-            case Language.CAT: return "CAT";
+            case Language.CAT: return "Torna a provar";
         }
 
         return "";
@@ -136,7 +136,7 @@ class LanguageController : MonoBehaviour {
         {
             case Language.EN: return "Go to next day";
             case Language.ES: return "Ir al próximo día";
-            case Language.CAT: return "CAT";
+            case Language.CAT: return "Vés al dia següent";
         }
 
         return "";
@@ -147,7 +147,7 @@ class LanguageController : MonoBehaviour {
         {
             case Language.EN: return "Day " + day;
             case Language.ES: return "Día " + day;
-            case Language.CAT: return "CAT";
+            case Language.CAT: return "Dia " + day;
         }
 
         return "";
@@ -180,7 +180,7 @@ class LanguageController : MonoBehaviour {
 
          case Language.EN: return "Time is running out! Go quickly to the front door! ";
          case Language.ES: return "Se acaba el tiempo! Ve rápido hacia la puerta principal! ";
-         case Language.CAT: return "S'acaba el temps! Veu ràpid cap a la porta principal! ";
+         case Language.CAT: return "S'acaba el temps! Vés ràpid cap a la porta principal! ";
         }
         return "";
     }
@@ -189,8 +189,8 @@ class LanguageController : MonoBehaviour {
         switch(CurrentLanguage){
 
          case Language.EN: return "Bigotitos is a very naughty kitten, he likes to hide items so that his owner cannot leave the house... Help her to find the items!";
-         case Language.ES: return "Bigotitos es un gatito muy travieso y le gusta esconder articulos para que su dueña no pueda salir de casa... Ayúdala a encontrar los articulos.";
-         case Language.CAT: return "Bigotitos és un gat molt entremaliat, li agrada amagar articles  perque  la seva propietaria no pugui sortir de casa.";
+         case Language.ES: return "Bigotitos es un gatito muy travieso y le gusta esconder objetos para que su dueña no pueda salir de casa... Ayúdala a encontrar los objetos.";
+         case Language.CAT: return "Bigotitos és un gat molt entremaliat, li agrada amagar objectes perquè la seva propietària no pugui sortir de casa. Ajuda-la a trobar els objectes.";
         }
         return "";
     }
