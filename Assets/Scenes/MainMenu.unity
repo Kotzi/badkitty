@@ -451,7 +451,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2c2c9e856358945c084b1336b7d79634, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2106,6 +2106,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SoundButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028968569293264506, guid: 848ea7c26ad5e4a0a8f2711d5729e166,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1028968569293264507, guid: 848ea7c26ad5e4a0a8f2711d5729e166,
         type: 3}
