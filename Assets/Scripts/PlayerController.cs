@@ -101,15 +101,27 @@ public class PlayerController : MonoBehaviour
             }
 
             if (dx < 0)
+            {
                 updateAnimation("left");
-            else if (dx > 0) 
+                orientation = "left";
+            }
+            else if (dx > 0)
+            {
                 updateAnimation("right");
+                orientation = "right";
+            }
             else if (dy < 0)
+            {
                 updateAnimation("down");
+                orientation = "down";
+            }
             else if (dy > 0)
+            {
                 updateAnimation("up");
+                orientation = "up";
+            }
 
-            float dt = Time.fixedDeltaTime;
+        float dt = Time.fixedDeltaTime;
             gameObject.transform.position += new Vector3(dx, dy, 0f) * dt * Velocity;
             isMoving = false;
             StillTimer = 0f;
@@ -188,7 +200,6 @@ public class PlayerController : MonoBehaviour
         {
             Animator.SetTrigger(trigger);
             currentTrigger = trigger;
-            orientation = trigger;
         }
     }
 }
