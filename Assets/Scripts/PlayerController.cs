@@ -120,8 +120,7 @@ public class PlayerController : MonoBehaviour
                 WalkingAudioSource.Stop();
             }
 
-            Animator.SetTrigger("still_" + orientation);
-            currentTrigger = "still";
+            updateAnimation("still_" + orientation);
         }
     }
 
@@ -183,7 +182,7 @@ public class PlayerController : MonoBehaviour
     }
     private void setDisplacement(float new_dx, float new_dy) { dx = new_dx; dy = new_dy; }
 
-    void updateAnimation(string trigger)
+    public void updateAnimation(string trigger)
     {
         if (currentTrigger != trigger)
         {

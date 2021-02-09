@@ -110,6 +110,7 @@ public class GameController : MonoBehaviour
                 var color = Color.black;
                 color.a = 0f;
                 PlayerInBed.enabled = false;
+                Player.updateAnimation("still_down");
                 Player.PlayerSpriteRenderer.enabled = true;
                 MainOverlay.DOColor(color, 1f)
                             .OnComplete(() => {
