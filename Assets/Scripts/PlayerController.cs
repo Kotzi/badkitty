@@ -103,22 +103,22 @@ public class PlayerController : MonoBehaviour
             if (dx < 0)
             {
                 updateAnimation("left");
-                orientation = "left";
+                updateOrientation("left");
             }
             else if (dx > 0)
             {
                 updateAnimation("right");
-                orientation = "right";
+                updateOrientation("right");
             }
             else if (dy < 0)
             {
                 updateAnimation("down");
-                orientation = "down";
+                updateOrientation("down");
             }
             else if (dy > 0)
             {
                 updateAnimation("up");
-                orientation = "up";
+                updateOrientation("up");
             }
 
         float dt = Time.fixedDeltaTime;
@@ -194,6 +194,10 @@ public class PlayerController : MonoBehaviour
     }
     private void setDisplacement(float new_dx, float new_dy) { dx = new_dx; dy = new_dy; }
 
+    public void updateOrientation(string orientation)
+    {
+        this.orientation = orientation;
+    }
     public void updateAnimation(string trigger)
     {
         if (currentTrigger != trigger)

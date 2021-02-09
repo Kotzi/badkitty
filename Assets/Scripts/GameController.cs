@@ -65,7 +65,8 @@ public class GameController : MonoBehaviour
                 currentTime -= 1 * Time.deltaTime;
              
                 gameCanvasController.setCountdownText(currentTime.ToString("0"), currentDay.ToString("0"));
-                if(currentTime <= 0){
+                if(currentTime <= 0)
+                {
                     isTimerActive = false;
                     currentTime = 0;
                     MainAudioSource.Stop();
@@ -74,17 +75,17 @@ public class GameController : MonoBehaviour
                     GameOver.PlaySong();
                     Player.canMove = false;
                 }
-                else if(currentTime <= 14  ){
-                   
+                else if(currentTime <= 14)
+                {
                     gameCanvasController.setInstruction("LAST");
                 }
-                else if(currentTime <= 30 && currentTime > 14){
-                 
+                else if(currentTime <= 30 && currentTime > 14)
+                {
                     gameCanvasController.setInstruction("MIDDLE");
                 }
-                else if(currentTime <= 100 && currentTime > 30){
-                   
-                     gameCanvasController.setInstruction("INITIAL");
+                else if(currentTime <= 100 && currentTime > 30)
+                {
+                    gameCanvasController.setInstruction("INITIAL");
                 }
             }
         }
@@ -110,6 +111,7 @@ public class GameController : MonoBehaviour
                 var color = Color.black;
                 color.a = 0f;
                 PlayerInBed.enabled = false;
+                Player.updateOrientation("down");
                 Player.updateAnimation("still_down");
                 Player.PlayerSpriteRenderer.enabled = true;
                 MainOverlay.DOColor(color, 1f)
